@@ -2,6 +2,6 @@
 
 Planned coverage: Transactions, indexing, migrations and recovery.
 
-Candidate languages: SQL, Python. No implementations delivered yet.
+Candidate languages: SQL, Python. Delivered: [SQLite transactions](sqlite-transactions/README.md).
 
 See the [roadmap](../../ROADMAP.md), [backlog](../../TODO/BACKLOG.md) and [quality standards](../../DOCS/CODING-STANDARDS.md).

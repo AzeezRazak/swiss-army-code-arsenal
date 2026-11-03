@@ -1,0 +1,4 @@
+CREATE TABLE entries (
+    id INTEGER PRIMARY KEY,
+    label TEXT NOT NULL UNIQUE
+);

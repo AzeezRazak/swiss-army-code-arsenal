@@ -2,6 +2,6 @@
 
 Planned coverage: Statistics, linear algebra and numerical methods.
 
-Candidate languages: Python, R, Julia. No implementations delivered yet.
+Candidate languages: Python, R, Julia. Delivered: [Online statistics](online-statistics/README.md).
 
 See the [roadmap](../../ROADMAP.md), [backlog](../../TODO/BACKLOG.md) and [quality standards](../../DOCS/CODING-STANDARDS.md).
