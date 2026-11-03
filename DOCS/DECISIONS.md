@@ -15,3 +15,7 @@ Owner chose local-only Git and supplied an email. Use repository-local author az
 ## DEC-0004 - Domain discoverability
 
 Provide one concise scope README per requested domain. This preserves the requested architecture in Git without falsely counting empty categories as implemented coverage.
+
+## DEC-0005 - Public GitHub publication (2026-11-04)
+
+The owner superseded local-only operation by explicitly requesting a new public repository and push. Created AzeezRazak/swiss-army-code-arsenal, configured origin and published main with upstream tracking. All 16 tests passed before publication. License remains undecided; historical local-only sprint records describe the state at sprint completion. Sprint 0002 remains unauthorized.
