@@ -1,3 +1,3 @@
-# Sprint 0002 next
+# Next sprint
 
-Not started. Awaiting explicit human authorization; no results or future sprint selection yet.
+Propose [Sprint 0003](../SPRINT-0003/PLAN.md): two bounded parsing utilities (CSV summary and arithmetic expression interpreter). Keep QA-0003 visible for symlink integration when a permitted environment is available. No next-sprint execution authorized.

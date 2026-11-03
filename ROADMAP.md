@@ -1,6 +1,6 @@
 # Roadmap
 
-Five domains now contain verified implementations: algorithms, data processing, databases, cybersecurity and mathematics. Other domains remain planned. Sequence work by prerequisites and practical usefulness. Language choices below are starting points, not mandatory duplication.
+Seven domains now contain implementations: algorithms, data processing, databases, cybersecurity, mathematics, networking and automation. See the catalog for verification limitations. Other domains remain planned. Sequence work by prerequisites and practical usefulness. Language choices below are starting points, not mandatory duplication.
 
 | Domain | Coverage | Candidate languages |
 |---|---|---|

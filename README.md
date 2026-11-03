@@ -10,7 +10,7 @@ A growing library of practical, reusable, documented and tested programming impl
 - [Catalog](DOCS/CATALOG.md): implemented and verified capabilities.
 - [Contributing](CONTRIBUTING.md) and [operating rules](AGENTS.md).
 
-Sprint 0001 delivered five tested Python/SQL utilities. See the catalog for runnable examples. Sprint 0002 is planned and awaits authorization.
+Sprint 0001 delivered five tested Python/SQL utilities. See the catalog for runnable examples. Sprint 0002 added three scripts for loopback networking and directory inventory. Sprint 0003 is planned and awaits authorization.
 
 ## Workflow
 
