@@ -1,0 +1,38 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+# JavaScript / TypeScript
+node_modules/
+# Compilers and builds
+target/
+build/
+dist/
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.dylib
+*.class
+# Local tools and generated output
+.idea/
+.vs/
+.DS_Store
+Thumbs.db
+*.log
+coverage/
