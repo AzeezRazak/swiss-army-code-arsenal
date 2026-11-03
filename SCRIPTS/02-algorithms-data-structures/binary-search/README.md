@@ -1,5 +1,10 @@
 # Binary search (ALG-0001)
 
+File: `SCRIPTS/02-algorithms-data-structures/binary-search/README.md`
+
+Folder: `SCRIPTS/02-algorithms-data-structures/binary-search`
+
+
 Return the first index matching a target, or -1 when absent. The function requires an ascending random-access sequence with a total ordering. Unsorted input and NaN are outside its contract; incompatible comparisons raise TypeError. The integer CLI validates ascending order and exits 2 on bad input. Function: O(log n) time and O(1) extra space; CLI validation is O(n).
 
 ## Requirements and setup

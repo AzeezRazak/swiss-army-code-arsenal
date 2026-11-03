@@ -1,5 +1,10 @@
 # Lessons learned
 
+File: `DOCS/LESSONS-LEARNED.md`
+
+Folder: `DOCS`
+
+
 ## LESSON-0001 - Explicit contracts support meaningful tests
 
 Source: Sprint 0001. Observation/evidence: 16 tests and five CLI examples passed; tests explicitly exercise first-duplicate search, blank JSON lines, rollback boundaries and singleton variance. Ambiguous edge behavior would make acceptance hard to assess. Improvement: specify invalid-input and resource policies before each new implementation. Action: RETRO-0001 assigned to Codex for Sprint 0002; completion requires executed error-path tests linked in review. Effectiveness: pending future verification.

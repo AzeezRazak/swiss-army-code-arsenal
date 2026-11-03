@@ -1,5 +1,10 @@
 # Sprint 0001 execution
 
+File: `TODO/SPRINT-0001/EXECUTION.md`
+
+Folder: `TODO/SPRINT-0001`
+
+
 Authorized by user EXECUTE; started and completed 2026-11-04 (Asia/Singapore). Scope: ALG-0001, DATA-0001, SEC-0001, DB-0001, MATH-0001 plus tests/documentation/review and next planning. Initial working tree clean on main at fa2025b.
 
 Environment: Windows, Python 3.13.9 (`python --version`), SQLite 3.51.0 (`python -c "import sqlite3; print(sqlite3.sqlite_version)"`). No dependencies installed; no network used.

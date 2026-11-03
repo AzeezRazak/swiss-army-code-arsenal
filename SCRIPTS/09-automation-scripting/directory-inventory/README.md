@@ -1,5 +1,10 @@
 # Read-only directory inventory (AUTO-0002)
 
+File: `SCRIPTS/09-automation-scripting/directory-inventory/README.md`
+
+Folder: `SCRIPTS/09-automation-scripting/directory-inventory`
+
+
 inventory.py emits deterministic JSON metadata for descendants of a directory, sorted by relative POSIX-style path. Files include byte size; directories, links and other entries include type. The root itself is omitted. No file content is opened or modified. Python 3.10+ standard library only; no installation. Verified on Windows/Python 3.13.9 only.
 
 ## Usage

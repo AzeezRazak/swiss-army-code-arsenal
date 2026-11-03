@@ -1,5 +1,10 @@
 # Sprint 0001 review
 
+File: `TODO/SPRINT-0001/REVIEW.md`
+
+Folder: `TODO/SPRINT-0001`
+
+
 Completed 2026-11-04. All five planned items meet acceptance criteria:
 
 | Item | Evidence |

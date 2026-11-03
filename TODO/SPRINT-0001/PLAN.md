@@ -1,5 +1,10 @@
 # Sprint 0001 - Offline foundations
 
+File: `TODO/SPRINT-0001/PLAN.md`
+
+Folder: `TODO/SPRINT-0001`
+
+
 Status: completed on 2026-11-04 following explicit user EXECUTE authorization.
 
 ## Goal and scope

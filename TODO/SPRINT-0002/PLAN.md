@@ -1,5 +1,10 @@
 # Sprint 0002 - Local networking and file inventory
 
+File: `TODO/SPRINT-0002/PLAN.md`
+
+Folder: `TODO/SPRINT-0002`
+
+
 Status: completed after user EXECUTE on 2026-11-04. Prerequisite: completed Sprint 0001. Review source: [Sprint 0001 retrospective](../SPRINT-0001/RETROSPECTIVE.md). Execution and review recorded alongside this plan.
 
 ## Script budget: 3/5

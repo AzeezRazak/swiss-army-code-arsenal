@@ -1,5 +1,10 @@
 # Catalog
 
+File: `DOCS/CATALOG.md`
+
+Folder: `DOCS`
+
+
 Seven implementations across seven domains; Python and SQL represented. Five fully verified locally; two new utilities verified with the Sprint 0002 platform limitations on 2026-11-04 (Windows, Python 3.13.9, SQLite 3.51.0). Latest suite: 31 passed, zero failed, one symlink integration test skipped (32 total). Each implementation has usage, setup, tests and limitations. No cross-platform verification or benchmarks performed.
 
 | ID | Implementation | Language | Verification |

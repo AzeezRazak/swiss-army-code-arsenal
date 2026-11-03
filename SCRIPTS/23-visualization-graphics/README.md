@@ -1,5 +1,10 @@
 # 23 - visualization-graphics
 
+File: `SCRIPTS/23-visualization-graphics/README.md`
+
+Folder: `SCRIPTS/23-visualization-graphics`
+
+
 Planned coverage: Charts, geometry, rendering and image processing.
 
 Candidate languages: TypeScript, Python. No implementations delivered yet.

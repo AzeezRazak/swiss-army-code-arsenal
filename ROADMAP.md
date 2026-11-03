@@ -1,5 +1,10 @@
 # Roadmap
 
+File: `ROADMAP.md`
+
+Folder: `.`
+
+
 Seven domains now contain implementations: algorithms, data processing, databases, cybersecurity, mathematics, networking and automation. See the catalog for verification limitations. Other domains remain planned. Sequence work by prerequisites and practical usefulness. Language choices below are starting points, not mandatory duplication.
 
 | Domain | Coverage | Candidate languages |

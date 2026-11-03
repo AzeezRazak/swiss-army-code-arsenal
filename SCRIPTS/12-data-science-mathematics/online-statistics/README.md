@@ -1,5 +1,10 @@
 # Online statistics (MATH-0001)
 
+File: `SCRIPTS/12-data-science-mathematics/online-statistics/README.md`
+
+Folder: `SCRIPTS/12-data-science-mathematics/online-statistics`
+
+
 Consume a numeric iterable once with Welford updates; return count, mean, population variance and sample variance. Empty and nonfinite inputs or overflowing intermediate arithmetic raise ValueError; invalid conversions can raise TypeError/ValueError/OverflowError. A singleton has population variance 0 and sample variance None (JSON null). CLI errors exit 2. Function uses O(n) time and O(1) state; CLI arguments are held in memory. Floating-point rounding remains possible, especially for large offsets; this is not arbitrary-precision statistics.
 
 ## Requirements and setup

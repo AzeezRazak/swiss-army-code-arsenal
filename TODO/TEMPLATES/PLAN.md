@@ -1,5 +1,10 @@
 # Sprint NNNN - plan
 
+File: `TODO/TEMPLATES/PLAN.md`
+
+Folder: `TODO/TEMPLATES`
+
+
 Template only; no authorization implied.
 
 ## Status and authorization
@@ -33,3 +38,7 @@ To be completed with evidence.
 ## Exclusions and stop condition
 
 To be completed with evidence.
+
+## Documentation standard
+
+When copying this template, replace File and Folder metadata with the generated document location. List deliverables with repository-relative paths. Verify script purpose blocks and explanatory comments during review.

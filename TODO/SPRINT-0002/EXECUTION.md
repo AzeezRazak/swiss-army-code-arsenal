@@ -1,5 +1,10 @@
 # Sprint 0002 execution
 
+File: `TODO/SPRINT-0002/EXECUTION.md`
+
+Folder: `TODO/SPRINT-0002`
+
+
 User EXECUTE authorized the existing 3/5-script plan on 2026-11-04. Preserved the pending user-requested five-script policy edits and included them in the implementation commit. Started from main at 675c777, with origin pointing to the owner's public repository.
 
 Implemented server.py, client.py and inventory.py; protocol.py is non-runnable shared framing code. Added standard-library subprocess, socket and temporary-directory tests. No packages installed, no external service used by the tests.

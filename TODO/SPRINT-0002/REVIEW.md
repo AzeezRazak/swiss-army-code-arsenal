@@ -1,5 +1,10 @@
 # Sprint 0002 review
 
+File: `TODO/SPRINT-0002/REVIEW.md`
+
+Folder: `TODO/SPRINT-0002`
+
+
 Completed 2026-11-04. Delivered 3 runnable scripts out of maximum 5; protocol.py is non-runnable support. No extra runtime dependencies.
 
 | Item | Acceptance evidence | Limitations |

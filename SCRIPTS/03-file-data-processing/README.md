@@ -1,5 +1,10 @@
 # 03 - file-data-processing
 
+File: `SCRIPTS/03-file-data-processing/README.md`
+
+Folder: `SCRIPTS/03-file-data-processing`
+
+
 Planned coverage: Validated text, CSV, JSON, archives and binary transformations.
 
 Candidate languages: Python. Delivered: [JSON Lines validation](jsonl-validator/README.md).

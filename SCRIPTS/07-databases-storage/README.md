@@ -1,5 +1,10 @@
 # 07 - databases-storage
 
+File: `SCRIPTS/07-databases-storage/README.md`
+
+Folder: `SCRIPTS/07-databases-storage`
+
+
 Planned coverage: Transactions, indexing, migrations and recovery.
 
 Candidate languages: SQL, Python. Delivered: [SQLite transactions](sqlite-transactions/README.md).

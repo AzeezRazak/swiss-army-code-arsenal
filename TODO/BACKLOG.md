@@ -1,5 +1,10 @@
 # Prioritized backlog
 
+File: `TODO/BACKLOG.md`
+
+Folder: `TODO`
+
+
 Statuses: proposed, planned, authorized, in-progress, blocked, complete. Complexity: S = one focused implementation; M = multiple components. P1 precedes P2/P3.
 
 | ID | Domain | Description | Priority | Complexity | Dependencies | Deliverables | Acceptance criteria | Status |

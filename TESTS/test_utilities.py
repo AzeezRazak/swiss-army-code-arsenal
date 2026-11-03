@@ -1,3 +1,11 @@
+# ========================================================================
+# Purpose: Verify the five Sprint 0001 utilities using synthetic data.
+# Location: TESTS/test_utilities.py
+# Input/output: Temporary fixtures and subprocesses; unittest pass/fail report.
+# Requirements: Python 3.10+; standard library only.
+# Usage (from repository root): python -m unittest discover -s TESTS -p "test_*.py" -v
+# Limitations: No external services; temporary databases/files are cleaned up.
+# ========================================================================
 """Acceptance tests for Sprint 0001; fixtures stay in temporary directories."""
 import hashlib
 import importlib.util
@@ -10,6 +18,7 @@ import sys
 import tempfile
 import unittest
 
+# Resolve fixtures/modules relative to the repository rather than the shell cwd.
 ROOT = Path(__file__).resolve().parents[1]
 PATHS = {
     "search": "SCRIPTS/02-algorithms-data-structures/binary-search/binary_search.py",
@@ -21,6 +30,7 @@ PATHS = {
 
 
 def load(key):
+    # Load standalone scripts by path without requiring installed packages.
     spec = importlib.util.spec_from_file_location(key, ROOT / PATHS[key])
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
@@ -41,6 +51,7 @@ class SearchTests(unittest.TestCase):
                 self.assertEqual(search(values, target), expected)
 
     def test_against_linear_reference(self):
+        # Seed randomized inputs so a regression is reproducible.
         rng = random.Random(42)
         search = load("search").first_index
         for _ in range(200):
@@ -117,11 +128,13 @@ class DatabaseTests(unittest.TestCase):
                     module.insert_batch(connection, ['gamma', 'alpha'])
                 self.assertFalse(connection.in_transaction)
             finally:
+                # Release the database handle before temporary-directory cleanup.
                 connection.close()
             connection = sqlite3.connect(path)
             try:
                 self.assertEqual(connection.execute('SELECT label FROM entries ORDER BY id').fetchall(), [('alpha',), ('beta',)])
             finally:
+                # Release the database handle before temporary-directory cleanup.
                 connection.close()
 
     def test_reject_active_or_autocommit(self):
@@ -135,6 +148,7 @@ class DatabaseTests(unittest.TestCase):
             with self.assertRaises(ValueError):
                 load('db').insert_batch(connection, [])
         finally:
+            # Release the database handle before temporary-directory cleanup.
             connection.close()
 
     def test_repeatable_demo(self):
@@ -145,6 +159,7 @@ class DatabaseTests(unittest.TestCase):
 
 class StatisticsTests(unittest.TestCase):
     def test_reference_values(self):
+        # Keep numerical reference comparisons reproducible across runs.
         rng = random.Random(7)
         for values in [[1, 2, 3, 4], [-5, -2, 0, 7], [5] * 20,
                        [rng.uniform(-100, 100) for _ in range(1000)]]:
@@ -170,5 +185,6 @@ class StatisticsTests(unittest.TestCase):
         self.assertIn('"mean": 2.5', result.stdout)
 
 
+# Run the test suite only when this module is executed directly.
 if __name__ == '__main__':
     unittest.main()

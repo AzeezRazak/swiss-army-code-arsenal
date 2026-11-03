@@ -1,5 +1,10 @@
 # Foundation initialization
 
+File: `DOCS/INITIALIZATION.md`
+
+Folder: `DOCS`
+
+
 Date: 2026-11-04 (Asia/Singapore).
 
 The owner selected this repository root. Inspection found an empty directory and no Git repository. Initialized branch main and created management documents, domain descriptions, standards, backlog, sprint templates and the proposed Sprint 0001. No development tasks were executed.

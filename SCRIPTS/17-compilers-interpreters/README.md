@@ -1,5 +1,10 @@
 # 17 - compilers-interpreters
 
+File: `SCRIPTS/17-compilers-interpreters/README.md`
+
+Folder: `SCRIPTS/17-compilers-interpreters`
+
+
 Planned coverage: Lexing, parsing, ASTs and bytecode.
 
 Candidate languages: Rust, Python. No implementations delivered yet.

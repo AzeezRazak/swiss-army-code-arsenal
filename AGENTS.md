@@ -1,5 +1,10 @@
 # Swiss Army Code Arsenal operating rules
 
+File: `AGENTS.md`
+
+Folder: `.`
+
+
 ## Scope and authority
 
 Work only in this repository and explicitly permitted development resources. Never inspect unrelated personal files, credentials, other repositories or production systems. No global configuration changes, system-wide dependency installs, paid APIs or infrastructure provisioning without separate authorization. Prefer project-local environments.
@@ -25,6 +30,12 @@ Each sprint TODO may include at most five runnable script deliverables in total,
 Favor useful, correct, reproducible implementations over file counts. Every meaningful implementation needs purpose, runtime requirements, dependencies, setup, usage, input/output, error handling, tests, limitations and relevant security notes. Keep small tools simple. Select languages for relevance rather than implementing every example in every language. Primary: Python, C, Rust, TypeScript, SQL, Bash. Secondary: C++, Go, Java, C#, Kotlin, Swift, PowerShell. Explore others when justified.
 
 Tests are mandatory where feasible. Missing runtimes or hardware mean verification is incomplete, not passed. Use local mocks and simulations. Document actual failures and debugging evidence; do not repeat failing approaches without new evidence. A task is complete only when acceptance criteria pass. Do not label code production-ready without evidence.
+
+## Source comments and document locations
+
+Every script, support module and test file must start with a comment block stating purpose, repository-relative file location, inputs/outputs, runtime/dependencies, usage and important limits. Add clear adjacent comments explaining what each meaningful operation or small related block does; explain algorithm steps, validation, errors, I/O, side effects and cleanup. Keep comments accurate when code changes.
+
+Every document, including sprint records and templates, must state its repository-relative file path and containing folder near the top. Root files use folder `.`. Templates identify their own location and require the generated document location to be filled in. Use repository-relative links in documents, and include folder-qualified file links in user-facing reports.
 
 ## Safety and source integrity
 

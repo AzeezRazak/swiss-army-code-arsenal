@@ -1,5 +1,10 @@
 # 21 - software-architecture
 
+File: `SCRIPTS/21-software-architecture/README.md`
+
+Folder: `SCRIPTS/21-software-architecture`
+
+
 Planned coverage: Modularity, API design and maintainable patterns.
 
 Candidate languages: TypeScript, Java. No implementations delivered yet.

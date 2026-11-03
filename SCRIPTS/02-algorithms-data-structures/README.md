@@ -1,5 +1,10 @@
 # 02 - algorithms-data-structures
 
+File: `SCRIPTS/02-algorithms-data-structures/README.md`
+
+Folder: `SCRIPTS/02-algorithms-data-structures`
+
+
 Planned coverage: Search, sorting, graphs, trees and complexity.
 
 Candidate languages: Python, C, Rust. Delivered: [Binary search](binary-search/README.md).

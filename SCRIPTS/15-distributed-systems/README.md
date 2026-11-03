@@ -1,5 +1,10 @@
 # 15 - distributed-systems
 
+File: `SCRIPTS/15-distributed-systems/README.md`
+
+Folder: `SCRIPTS/15-distributed-systems`
+
+
 Planned coverage: Queues, coordination, consistency and fault tolerance.
 
 Candidate languages: Go, Rust. No implementations delivered yet.

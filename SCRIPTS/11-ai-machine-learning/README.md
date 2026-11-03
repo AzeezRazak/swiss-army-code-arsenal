@@ -1,5 +1,10 @@
 # 11 - ai-machine-learning
 
+File: `SCRIPTS/11-ai-machine-learning/README.md`
+
+Folder: `SCRIPTS/11-ai-machine-learning`
+
+
 Planned coverage: Offline evaluation, embeddings, retrieval and inference.
 
 Candidate languages: Python. No implementations delivered yet.

@@ -1,5 +1,10 @@
 # 22 - hardware-electronics
 
+File: `SCRIPTS/22-hardware-electronics/README.md`
+
+Folder: `SCRIPTS/22-hardware-electronics`
+
+
 Planned coverage: Digital logic and simulated hardware interfaces.
 
 Candidate languages: Verilog, VHDL. No implementations delivered yet.

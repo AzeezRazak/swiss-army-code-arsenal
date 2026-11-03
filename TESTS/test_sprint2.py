@@ -1,3 +1,11 @@
+# ========================================================================
+# Purpose: Verify local TCP framing and read-only inventory contracts.
+# Location: TESTS/test_sprint2.py
+# Input/output: Loopback sockets and temporary trees; unittest pass/fail/skip report.
+# Requirements: Python 3.10+; standard library only.
+# Usage (from repository root): python -m unittest discover -s TESTS -p "test_*.py" -v
+# Limitations: Real symlink checks may skip when OS privileges are unavailable.
+# ========================================================================
 """Loopback integration and synthetic filesystem acceptance checks."""
 import importlib.util
 import json
@@ -14,6 +22,7 @@ import time
 import unittest
 from unittest.mock import patch
 
+# Resolve fixtures/modules relative to the repository rather than the shell cwd.
 ROOT = Path(__file__).resolve().parents[1]
 NET = ROOT / "SCRIPTS/05-networking-protocols/loopback-tcp"
 AUTO = ROOT / "SCRIPTS/09-automation-scripting/directory-inventory/inventory.py"
@@ -32,9 +41,11 @@ class NetworkTests(unittest.TestCase):
             if process.poll() is None:
                 process.kill()
             process.communicate(timeout=5)
+        # Ensure a failed assertion cannot leave a server subprocess running.
         self.addCleanup(cleanup)
         lines = queue.Queue()
         threading.Thread(target=lambda: lines.put(process.stdout.readline()), daemon=True).start()
+        # Bound readiness waiting so a broken server cannot hang the suite.
         line = lines.get(timeout=5)
         self.assertTrue(line.startswith('PORT '), line)
         return process, int(line.split()[1])
@@ -66,6 +77,7 @@ class NetworkTests(unittest.TestCase):
             process, port = self.start_server()
             with socket.create_connection(('127.0.0.1', port), timeout=2) as connection:
                 connection.sendall(payload)
+                # Signal EOF after a partial frame while allowing the server to report failure.
                 connection.shutdown(socket.SHUT_WR)
             self.assertIn('truncated', self.finish(process, False))
 
@@ -85,6 +97,7 @@ class NetworkTests(unittest.TestCase):
         self.finish(process, False)
 
     def test_total_frame_deadline(self):
+        # Create local connected sockets to isolate the trickle-byte deadline test.
         left, right = socket.socketpair()
         self.addCleanup(left.close)
         self.addCleanup(right.close)
@@ -160,6 +173,7 @@ class InventoryTests(unittest.TestCase):
         try:
             (self.root/'link').symlink_to(self.root/'target', target_is_directory=True)
         except OSError as error:
+            # Report the missing platform capability explicitly rather than claiming a pass.
             self.skipTest('OS disallows symlink creation: '+str(error))
         rows = inv.inventory(self.root)
         self.assertIn({'path':'link','type':'link'}, rows)
@@ -190,5 +204,6 @@ class InventoryTests(unittest.TestCase):
         self.assertTrue(inv.is_link(Info()))
 
 
+# Run the test suite only when this module is executed directly.
 if __name__ == '__main__':
     unittest.main()

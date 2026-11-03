@@ -1,5 +1,10 @@
 # SHA-256 file digest (SEC-0001)
 
+File: `SCRIPTS/08-cybersecurity/sha256-file/README.md`
+
+Folder: `SCRIPTS/08-cybersecurity/sha256-file`
+
+
 Read binary data in 1 MiB chunks and print a lowercase SHA-256 digest. Empty files are supported. Read errors go to stderr with exit 1; success exits 0. The function accepts a positive integer chunk size. Memory is O(chunk size), time O(file size). Hashes help compare integrity but do not authenticate a sender; obtain expected digests through a trusted channel. Concurrent file modifications are not detected; use a stable regular file, not an endless device or pipe.
 
 ## Requirements and setup

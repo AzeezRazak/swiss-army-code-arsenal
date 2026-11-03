@@ -1,5 +1,10 @@
 # JSON Lines validation (DATA-0001)
 
+File: `SCRIPTS/03-file-data-processing/jsonl-validator/README.md`
+
+Folder: `SCRIPTS/03-file-data-processing/jsonl-validator`
+
+
 Read a file as UTF-8, validating one JSON value per line. Empty files are valid; blank lines, BOM, malformed JSON, invalid UTF-8 and NaN/Infinity constants are rejected. Stops at the first error with line number on stderr and exit 1; success exits 0. Duplicate object keys follow Python JSON behavior (last value wins). Memory scales with the longest line, not total file size; no fixed line-size limit. Extremely large or hostile lines may exhaust memory; use only appropriately sized inputs. Numeric range follows Python JSON parsing; this is syntax validation, not schema or numeric-range validation.
 
 ## Requirements and setup

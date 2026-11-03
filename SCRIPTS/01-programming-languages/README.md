@@ -1,5 +1,10 @@
 # 01 - programming-languages
 
+File: `SCRIPTS/01-programming-languages/README.md`
+
+Folder: `SCRIPTS/01-programming-languages`
+
+
 Planned coverage: Language idioms, error handling, concurrency and interoperability.
 
 Candidate languages: Python, C, Rust. No implementations delivered yet.

@@ -1,5 +1,10 @@
 # Sprint 0001 retrospective
 
+File: `TODO/SPRINT-0001/RETROSPECTIVE.md`
+
+Folder: `TODO/SPRINT-0001`
+
+
 Standard-library-only scope enabled all five examples and 16 tests to run without installation or network dependencies. Seeded reference comparisons covered more input combinations than a few fixed examples, while subprocess tests checked actual exit behavior.
 
 No implementation tests failed. This is evidence of the tested cases only, not absence of defects. Testing covered one Windows runtime; portability claims remain deliberately limited.

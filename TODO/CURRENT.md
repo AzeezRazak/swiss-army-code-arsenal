@@ -1,5 +1,10 @@
 # Current state
 
+File: `TODO/CURRENT.md`
+
+Folder: `TODO`
+
+
 - Current planned sprint: SPRINT-0003, awaiting human authorization (2/5 scripts).
 - Sprint 0002 authorized by user EXECUTE and completed 2026-11-04; 3/5 scripts delivered. Sprint 0003 is not authorized.
 - Branch main; authorized origin/main: https://github.com/AzeezRazak/swiss-army-code-arsenal.git.

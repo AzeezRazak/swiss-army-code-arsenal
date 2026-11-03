@@ -1,5 +1,10 @@
 # 20 - testing-quality
 
+File: `SCRIPTS/20-testing-quality/README.md`
+
+Folder: `SCRIPTS/20-testing-quality`
+
+
 Planned coverage: Unit, integration, property, regression and benchmark methods.
 
 Candidate languages: Python, TypeScript. No implementations delivered yet.

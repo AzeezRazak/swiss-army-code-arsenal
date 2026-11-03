@@ -1,5 +1,10 @@
 # Tests
 
+File: `TESTS/README.md`
+
+Folder: `TESTS`
+
+
 Run from the repository root:
 
 ```powershell

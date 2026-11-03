@@ -1,5 +1,10 @@
 # 19 - finance-blockchain
 
+File: `SCRIPTS/19-finance-blockchain/README.md`
+
+Folder: `SCRIPTS/19-finance-blockchain`
+
+
 Planned coverage: Offline backtesting, risk and smart-contract simulations.
 
 Candidate languages: Python, Solidity. No implementations delivered yet.

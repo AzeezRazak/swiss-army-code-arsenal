@@ -1,5 +1,10 @@
 # Sprint 0001 tasks
 
+File: `TODO/SPRINT-0001/TASKS.md`
+
+Folder: `TODO/SPRINT-0001`
+
+
 All acceptance criteria completed after user EXECUTE authorization on 2026-11-04.
 
 - [x] **ALG-0001** - Binary search with first-match semantics. Acceptance: Empty, absent, duplicate and boundary cases pass; document sorted-input precondition and complexity.

@@ -1,5 +1,10 @@
 # 10 - cloud-devops
 
+File: `SCRIPTS/10-cloud-devops/README.md`
+
+Folder: `SCRIPTS/10-cloud-devops`
+
+
 Planned coverage: Containers, CI, observability and recovery.
 
 Candidate languages: Bash, YAML. No implementations delivered yet.

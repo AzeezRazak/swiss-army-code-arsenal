@@ -1,5 +1,10 @@
 # Sprint 0003 - Bounded parsing utilities
 
+File: `TODO/SPRINT-0003/PLAN.md`
+
+Folder: `TODO/SPRINT-0003`
+
+
 PLANNED - AWAITING HUMAN AUTHORIZATION. Start/completion: not started/not completed. Review [Sprint 0002](../SPRINT-0002/REVIEW.md) and [lessons](../../DOCS/LESSONS-LEARNED.md) before execution.
 
 ## Script budget: 2/5

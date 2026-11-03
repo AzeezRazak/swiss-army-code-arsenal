@@ -1,5 +1,10 @@
 # Loopback TCP echo (NET-0002)
 
+File: `SCRIPTS/05-networking-protocols/loopback-tcp/README.md`
+
+Folder: `SCRIPTS/05-networking-protocols/loopback-tcp`
+
+
 Two runnable scripts, server.py and client.py, demonstrate bounded message framing. protocol.py is a non-runnable support module. Requires Python 3.10+ standard library; no installation. Verified on Windows/Python 3.13.9 only.
 
 ## Usage

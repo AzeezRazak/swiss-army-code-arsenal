@@ -1,5 +1,10 @@
 # 05 - networking-protocols
 
+File: `SCRIPTS/05-networking-protocols/README.md`
+
+Folder: `SCRIPTS/05-networking-protocols`
+
+
 Planned coverage: Sockets, DNS, HTTP, TLS and local diagnostics.
 
 Candidate languages: Python, Go. Delivered: [Loopback TCP echo](loopback-tcp/README.md).

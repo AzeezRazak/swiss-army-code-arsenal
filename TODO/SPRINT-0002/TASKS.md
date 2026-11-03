@@ -1,5 +1,10 @@
 # Sprint 0002 tasks
 
+File: `TODO/SPRINT-0002/TASKS.md`
+
+Folder: `TODO/SPRINT-0002`
+
+
 - [x] NET-0002: define framing/timeout contract, implement loopback client/server, test normal and malformed exchanges, document usage/limits.
 - [x] AUTO-0002: define path/symlink/error policy, implement read-only deterministic inventory, test synthetic trees, document usage/limits.
 - [x] Re-run prior regressions and verify new examples.

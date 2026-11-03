@@ -1,5 +1,10 @@
 # 18 - reverse-engineering
 
+File: `SCRIPTS/18-reverse-engineering/README.md`
+
+Folder: `SCRIPTS/18-reverse-engineering`
+
+
 Planned coverage: Owned binary formats, debugging and controlled analysis.
 
 Candidate languages: C, Assembly. No implementations delivered yet.

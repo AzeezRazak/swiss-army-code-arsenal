@@ -1,5 +1,10 @@
 # Sprint 0002 retrospective
 
+File: `TODO/SPRINT-0002/RETROSPECTIVE.md`
+
+Folder: `TODO/SPRINT-0002`
+
+
 Absolute frame deadlines passed a trickle-byte regression; independent accept/receive/send bounds keep the demonstration finite. Ephemeral-port integration checks and cleanup prevented hanging test processes. Three runnable deliverables met the five-script cap.
 
 Windows denied real symlink creation. The original test was honestly skipped; adding a real junction test verified the native reparse-point behavior without changing system privileges. This does not establish POSIX or privileged Windows symlink behavior. QA-0003 carries the remaining evidence gap.

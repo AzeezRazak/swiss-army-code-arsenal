@@ -1,5 +1,10 @@
 # Swiss Army Code Arsenal
 
+File: `README.md`
+
+Folder: `.`
+
+
 A growing library of practical, reusable, documented and tested programming implementations across 25 technical domains. There is no fixed final application or completion date. Quality and usefulness take priority over file counts.
 
 ## Start here
