@@ -1,6 +1,6 @@
 # Sprint 0001 - Offline foundations
 
-Status: proposed, awaiting explicit EXECUTE authorization. No development has begun.
+Status: completed on 2026-11-04 following explicit user EXECUTE authorization.
 
 ## Goal and scope
 
@@ -10,7 +10,7 @@ Deliver five independently usable Python/SQL examples: ALG-0001 binary search, D
 
 Every item must meet its [backlog criteria](../BACKLOG.md), include an implementation README with setup, usage, error cases and limitations, and meaningful unittest coverage. Tests must operate on synthetic data and temporary files. Add working examples and catalog entries with honest verification status.
 
-Planned verification command (not available or executed yet): `python -m unittest discover -s TESTS -p "test_*.py" -v`. During execution confirm the actual Python version and sqlite3 availability, record commands and outcomes, and run documented CLI examples. No third-party network access or credentials required.
+Executed verification command: `python -m unittest discover -s TESTS -p "test_*.py" -v`. During execution confirm the actual Python version and sqlite3 availability, record commands and outcomes, and run documented CLI examples. No third-party network access or credentials required.
 
 ## Dependencies and risks
 

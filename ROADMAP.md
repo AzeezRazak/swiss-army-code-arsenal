@@ -1,6 +1,6 @@
 # Roadmap
 
-All domains are planned; none currently contains an implementation. Sequence work by prerequisites and practical usefulness. Language choices below are starting points, not mandatory duplication.
+Five domains now contain verified implementations: algorithms, data processing, databases, cybersecurity and mathematics. Other domains remain planned. Sequence work by prerequisites and practical usefulness. Language choices below are starting points, not mandatory duplication.
 
 | Domain | Coverage | Candidate languages |
 |---|---|---|
@@ -33,7 +33,7 @@ All domains are planned; none currently contains an implementation. Sequence wor
 ## Sequencing
 
 1. Foundation: documentation, backlog and sprint controls (initial assignment).
-2. Sprint 0001 proposal: five offline Python/SQL utilities with tests and usage examples.
+2. Sprint 0001 completed: five offline Python/SQL utilities with tests and usage examples.
 3. Expand algorithms and systems with C/Rust and web tooling with TypeScript; choose tasks after reviewing Sprint 0001 evidence.
 4. Add local networking, storage, defensive security and integration examples.
 5. Explore AI, distributed computing, hardware simulation and performance once prerequisites are available.

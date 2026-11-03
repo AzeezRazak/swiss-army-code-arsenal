@@ -10,7 +10,7 @@ A growing library of practical, reusable, documented and tested programming impl
 - [Catalog](DOCS/CATALOG.md): implemented and verified capabilities.
 - [Contributing](CONTRIBUTING.md) and [operating rules](AGENTS.md).
 
-This repository currently contains the project-management foundation only. Sprint 0001 is planned, not authorized or implemented. Domain directories describe future scope; they do not count as implemented coverage.
+Sprint 0001 delivered five tested Python/SQL utilities. See the catalog for runnable examples. Sprint 0002 is planned and awaits authorization.
 
 ## Workflow
 

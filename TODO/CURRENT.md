@@ -1,20 +1,17 @@
 # Current state
 
-- Current sprint: SPRINT-0001.
-- Status: PLANNED - AWAITING HUMAN AUTHORIZATION.
-- Authorized scope: initial directory/documentation foundation, backlog, templates, Sprint 0001 planning, and local initialization commit. No sprint implementation authorized.
-- Foundation date: 2026-11-04 (Asia/Singapore).
-- Sprint start/completion dates: not started / not completed.
-- Branch: main. GitHub remote: absent by owner choice (local only). Push: not applicable.
-- Pending decisions: license selection; Sprint 0001 authorization.
+- Current planned sprint: SPRINT-0002; PLANNED - AWAITING HUMAN AUTHORIZATION.
+- Previous sprint: SPRINT-0001 completed 2026-11-04, started 2026-11-04 following user EXECUTE authorization.
+- Authorized scope completed: five Sprint 0001 utilities, tests, documentation, review/retrospective, local commits and next planning. Sprint 0002 execution is not authorized.
+- Branch: main. Local only by owner choice; no remote or push.
+- Pending decisions: Sprint 0002 authorization and license selection.
 
-## Sprint documents
+## Documents
 
-- [Plan](SPRINT-0001/PLAN.md)
-- [Tasks](SPRINT-0001/TASKS.md)
-- [Execution](SPRINT-0001/EXECUTION.md)
-- [Review](SPRINT-0001/REVIEW.md)
-- [Retrospective](SPRINT-0001/RETROSPECTIVE.md)
-- [Next](SPRINT-0001/NEXT.md)
-
-Initialization verification and commit outcome are recorded in [the foundation record](../DOCS/INITIALIZATION.md).
+- [Completed Sprint 0001 review](SPRINT-0001/REVIEW.md)
+- [Sprint 0002 plan](SPRINT-0002/PLAN.md)
+- [Tasks](SPRINT-0002/TASKS.md)
+- [Execution](SPRINT-0002/EXECUTION.md)
+- [Review](SPRINT-0002/REVIEW.md)
+- [Retrospective](SPRINT-0002/RETROSPECTIVE.md)
+- [Next](SPRINT-0002/NEXT.md)

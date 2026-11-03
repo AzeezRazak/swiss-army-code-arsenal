@@ -1,5 +1,9 @@
-# Lessons Learned
+# Lessons learned
 
-No sprint lessons have been established yet. Do not fabricate retrospective findings.
+## LESSON-0001 - Explicit contracts support meaningful tests
 
-For each future entry record lesson ID, source sprint, observation, evidence, root cause, recommended improvement, action taken, owner, target sprint and verification outcome. Review relevant entries before planning. A proposed corrective action remains unverified until its effectiveness is measured.
+Source: Sprint 0001. Observation/evidence: 16 tests and five CLI examples passed; tests explicitly exercise first-duplicate search, blank JSON lines, rollback boundaries and singleton variance. Ambiguous edge behavior would make acceptance hard to assess. Improvement: specify invalid-input and resource policies before each new implementation. Action: RETRO-0001 assigned to Codex for Sprint 0002; completion requires executed error-path tests linked in review. Effectiveness: pending future verification.
+
+## LESSON-0002 - Verification scope must stay visible
+
+Source: Sprint 0001. Evidence: checks ran on Windows/Python 3.13.9 only. Root cause of limited portability evidence: a single available execution environment. Action RETRO-0002: Codex must retain explicit platform limitations in Sprint 0002 READMEs and review. No claim of cross-platform verification. Outcome: initial documentation records the limitation; future effectiveness is pending.

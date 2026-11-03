@@ -1,3 +1,3 @@
-# Sprint 0001 next
+# Next sprint
 
-No Sprint 0002 selected. Review Sprint 0001 evidence first; carry forward failures and choose a bounded proposal. Fresh authorization will be required.
+No incomplete Sprint 0001 tasks carried forward. Propose Sprint 0002: bounded loopback networking and safe file inventory, applying explicit timeout/error contracts. See [plan](../SPRINT-0002/PLAN.md). This addresses underrepresented networking and automation domains without requiring installations or external services. Fresh authorization required.
