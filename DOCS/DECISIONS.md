@@ -19,3 +19,7 @@ Provide one concise scope README per requested domain. This preserves the reques
 ## DEC-0005 - Public GitHub publication (2026-11-04)
 
 The owner superseded local-only operation by explicitly requesting a new public repository and push. Created AzeezRazak/swiss-army-code-arsenal, configured origin and published main with upstream tracking. All 16 tests passed before publication. License remains undecided; historical local-only sprint records describe the state at sprint completion. Sprint 0002 remains unauthorized.
+
+## DEC-0006 - Bounded Sprint 0002 interfaces
+
+Keep the network example as two runnable scripts plus a non-runnable framing module; inventory is the third script (3/5). Use fixed loopback addresses, single exchanges, maximum payload and absolute receive deadlines. Inventory rejects linked roots and lists links without traversal; path races remain documented limitations.

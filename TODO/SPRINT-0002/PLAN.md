@@ -2,6 +2,14 @@
 
 Status: PLANNED, not authorized. Prerequisite: completed Sprint 0001. Review source: [Sprint 0001 retrospective](../SPRINT-0001/RETROSPECTIVE.md). No execution has started.
 
+## Script budget: 3/5
+
+1. NET-0002: loopback TCP server.
+2. NET-0002: loopback TCP client.
+3. AUTO-0002: read-only directory inventory.
+
+Tests, documentation, fixtures and non-runnable support modules are excluded. Additional runnable scripts must stay within five total; overflow goes to a later sprint.
+
 ## Proposed scope and acceptance
 
 - NET-0002: Python loopback TCP request/reply example with length-prefixed messages, explicit maximum payload and finite timeouts. Deliver server/client CLI, README and local integration tests. Accept when normal exchanges, truncated frames, oversize declarations and idle-client timeout are tested; bind only to loopback by default and ensure clean shutdown.

@@ -16,6 +16,10 @@ PLAN prepares or revises a sprint without implementation. EXECUTE authorizes the
 
 Before planning, review the roadmap, backlog, previous reviews, retrospectives, lessons, defects and coverage gaps. Select bounded tasks with measurable acceptance criteria. After authorization, implement, test, document and commit coherent units. Record passed, failed and skipped checks honestly. Review acceptance criteria, record defects, and retrospect with concrete actions, owner, target sprint and measurable verification. Prepare the next sprint and stop for authorization.
 
+## Sprint size limit
+
+Each sprint TODO may include at most five runnable script deliverables in total, across all tasks. Count separate client/server scripts and language variants individually. Tests, documentation, fixtures and non-runnable support modules do not count. List the scripts and total in the sprint plan; defer additional scripts to a later sprint. The backlog may contain more than five future items.
+
 ## Engineering quality
 
 Favor useful, correct, reproducible implementations over file counts. Every meaningful implementation needs purpose, runtime requirements, dependencies, setup, usage, input/output, error handling, tests, limitations and relevant security notes. Keep small tools simple. Select languages for relevance rather than implementing every example in every language. Primary: Python, C, Rust, TypeScript, SQL, Bash. Secondary: C++, Go, Java, C#, Kotlin, Swift, PowerShell. Explore others when justified.

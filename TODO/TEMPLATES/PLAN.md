@@ -10,6 +10,10 @@ To be completed with evidence.
 
 To be completed with evidence.
 
+## Script budget (maximum 5)
+
+List each runnable script deliverable and its task ID. Total: N/5. Count separate client/server scripts and language variants individually; exclude tests, documentation, fixtures and non-runnable support modules. Defer overflow to another sprint.
+
 ## Backlog IDs
 
 To be completed with evidence.

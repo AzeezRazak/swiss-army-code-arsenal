@@ -14,6 +14,6 @@ Sprint 0001 delivered five tested Python/SQL utilities. See the catalog for runn
 
 ## Workflow
 
-Request PLAN, STATUS, REVIEW, RETROSPECT or ROADMAP as needed. EXECUTE authorizes the current bounded sprint. Every future sprint needs fresh authorization. PAUSE stops initiation of new work.
+Request PLAN, STATUS, REVIEW, RETROSPECT or ROADMAP as needed. EXECUTE authorizes the current bounded sprint. Each sprint TODO is limited to five runnable scripts. Every future sprint needs fresh authorization. PAUSE stops initiation of new work.
 
 No runtime dependencies are needed to read this foundation. Each future implementation will document its own setup and test commands. The public repository is [AzeezRazak/swiss-army-code-arsenal](https://github.com/AzeezRazak/swiss-army-code-arsenal); licensing is pending; see [license status](LICENSE).
