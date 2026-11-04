@@ -25,7 +25,7 @@ To be completed with evidence.
 
 ## Script budget check
 
-- [ ] Planned runnable script deliverables total no more than five across this sprint.
+- [ ] Planned runnable script deliverables total at least five and no more than ten across this sprint.
 - [ ] Actual deliverables stay within the planned budget; overflow is deferred.
 
 ## Documentation standard

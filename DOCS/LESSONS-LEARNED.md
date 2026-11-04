@@ -16,3 +16,7 @@ Source: Sprint 0001. Evidence: checks ran on Windows/Python 3.13.9 only. Root ca
 ## LESSON-0003 - Platform-dependent filesystem verification
 
 Source: Sprint 0002. Real symbolic-link creation failed with WinError 1314; a real junction integration test passed. Cause: Windows privilege constraints. Action: preserve the symlink skip, track QA-0003, and validate available native reparse behavior. Owner Codex; target Sprint 0003 reporting (RETRO-0003). Junction outcome verified; cross-platform symlink behavior still incomplete. Prior RETRO-0001/0002 actions applied through documented contracts, timeout/error tests and explicit platform limits.
+
+## LESSON-0004 - Beginner lessons need explicit policies
+
+Source Sprint 0003: tests verify every grading threshold and explain whitespace/casefold behavior. These choices are teaching contracts, not universal domain rules. Action RETRO-0004: Codex, Sprint 0004, pair each documented example with a deterministic CLI test; completion requires five verified examples. Current evidence: all five Sprint 0003 examples passed. Future action effectiveness remains pending.

@@ -32,3 +32,7 @@ Keep the network example as two runnable scripts plus a non-runnable framing mod
 ## DEC-0007 - Explanatory source and document locations
 
 Owner requested purpose blocks, clear comments explaining operations, and file locations in documents. Applied to all existing Python/SQL source and tests, and all tracked Markdown documents plus the license placeholder. Persisted requirements in operating/coding standards, contribution guidance and sprint templates. No new runnable scripts or sprint execution. Validation: unchanged Python ASTs; 31 tests passed, one existing symlink skip; file locations, links and whitespace checked.
+
+## DEC-0008 - Fundamental Python and revised sprint size
+
+On 2026-11-05 the owner authorized revising/executing Sprint 0003 around fundamental Python and replaced the prior cap with minimum five/maximum ten runnable scripts per future development sprint. Deliver five focused lessons now; prioritize Python fundamentals in the next few proposals. Deferred DATA-0002 and COMP-0002. Historical sprint sizes are unchanged.

@@ -15,10 +15,10 @@ A growing library of practical, reusable, documented and tested programming impl
 - [Catalog](DOCS/CATALOG.md): implemented and verified capabilities.
 - [Contributing](CONTRIBUTING.md) and [operating rules](AGENTS.md).
 
-Sprint 0001 delivered five tested Python/SQL utilities. See the catalog for runnable examples. Sprint 0002 added three scripts for loopback networking and directory inventory. Sprint 0003 is planned and awaits authorization.
+Sprint 0001 delivered five tested Python/SQL utilities. See the catalog for runnable examples. Sprint 0002 added three scripts for loopback networking and directory inventory. Sprint 0003 delivered five [fundamental Python lessons](SCRIPTS/01-programming-languages/python-fundamentals/README.md). Sprint 0004 is planned and awaits authorization.
 
 ## Workflow
 
-Request PLAN, STATUS, REVIEW, RETROSPECT or ROADMAP as needed. EXECUTE authorizes the current bounded sprint. Each sprint TODO is limited to five runnable scripts. Every future sprint needs fresh authorization. PAUSE stops initiation of new work.
+Request PLAN, STATUS, REVIEW, RETROSPECT or ROADMAP as needed. EXECUTE authorizes the current bounded sprint. Each sprint TODO is limited to 5-10 runnable scripts from Sprint 0003 onward. Every future sprint needs fresh authorization. PAUSE stops initiation of new work.
 
 No runtime dependencies are needed to read this foundation. Each future implementation will document its own setup and test commands. The public repository is [AzeezRazak/swiss-army-code-arsenal](https://github.com/AzeezRazak/swiss-army-code-arsenal); licensing is pending; see [license status](LICENSE).

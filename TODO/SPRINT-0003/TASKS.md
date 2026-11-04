@@ -4,11 +4,10 @@ File: `TODO/SPRINT-0003/TASKS.md`
 
 Folder: `TODO/SPRINT-0003`
 
-
-- [ ] DATA-0002: define CSV policies, implement summary, test and document.
-- [ ] COMP-0002: define grammar/limits, implement parser, test and document.
-- [ ] Keep runnable script count at 2/5; run regressions and examples.
-- [ ] Report platform skips and QA-0003 status; apply RETRO-0003.
-- [ ] Review, retrospect, update catalog/backlog, commit and push; prepare next plan and stop.
-
-Not authorized.
+- [x] PY-0001: implement, comment, document and test `SCRIPTS/01-programming-languages/python-fundamentals/temperature.py`.
+- [x] PY-0002: implement, comment, document and test `SCRIPTS/01-programming-languages/python-fundamentals/grade.py`.
+- [x] PY-0003: implement, comment, document and test `SCRIPTS/01-programming-languages/python-fundamentals/list_summary.py`.
+- [x] PY-0004: implement, comment, document and test `SCRIPTS/01-programming-languages/python-fundamentals/text_summary.py`.
+- [x] PY-0005: implement, comment, document and test `SCRIPTS/01-programming-languages/python-fundamentals/word_counts.py`.
+- [x] Run regressions/examples, record skips, update catalog/review/retrospective, commit and push.
+- [x] Prepare next fundamental Python sprint within 5-10 scripts, then stop.

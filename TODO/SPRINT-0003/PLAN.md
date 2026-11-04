@@ -1,25 +1,23 @@
-# Sprint 0003 - Bounded parsing utilities
+# Sprint 0003 - Fundamental Python
 
 File: `TODO/SPRINT-0003/PLAN.md`
 
 Folder: `TODO/SPRINT-0003`
 
+Authorized by the owner's EXECUTE on 2026-11-05, with revised focus and 5-10 script limit. Start/completion: 2026-11-05 / 2026-11-05. Status: complete. Five runnable scripts; no support scripts. The previous DATA-0002 and COMP-0002 proposal is deferred to the backlog.
 
-PLANNED - AWAITING HUMAN AUTHORIZATION. Start/completion: not started/not completed. Review [Sprint 0002](../SPRINT-0002/REVIEW.md) and [lessons](../../DOCS/LESSONS-LEARNED.md) before execution.
+## Script budget: 5/10 (minimum 5)
 
-## Script budget: 2/5
+All deliverables are in `SCRIPTS/01-programming-languages/python-fundamentals/`:
 
-1. DATA-0002: Python CSV summary CLI.
-2. COMP-0002: Python arithmetic expression interpreter CLI.
+- PY-0001: `temperature.py` - Variables and arithmetic. Convert Celsius to Fahrenheit.
+- PY-0002: `grade.py` - Conditionals. Classify a numeric score using an explicit example grading scale.
+- PY-0003: `list_summary.py` - Loops and lists. Count even and odd integers and calculate their sum.
+- PY-0004: `text_summary.py` - Strings. Count characters, whitespace-separated words and alphabetic characters.
+- PY-0005: `word_counts.py` - Dictionaries. Count whitespace-separated words after case folding.
 
-Tests, fixtures, docs and non-runnable support are excluded. No additional runnable scripts planned.
+## Acceptance
 
-## Tasks and acceptance
+Each script has a reusable function, clear comments and CLI documentation. Test normal and boundary inputs, invalid inputs and subprocess exit/output. Temperature rejects nonfinite/overflow values; grades define every threshold; list totals support empty and signed inputs; text uses Unicode code points and whitespace tokens; dictionary counts casefold and preserve punctuation. All five documented examples must pass; previous regressions remain passing or explicitly skipped with QA-0003 recorded.
 
-DATA-0002: stream UTF-8 CSV with explicit header/row-width policy, summarize row count and missing cells per column, and output deterministic JSON. Document encoding, newline, duplicate header and malformed-row behavior. Tests cover quoted delimiters/newlines, empty input, duplicate headers and bad encoding. No source modification.
-
-COMP-0002: tokenize and parse decimal arithmetic with parentheses and +, -, *, / without eval or exec. Define precedence and unary signs; bound input length and nesting. Tests cover precedence, invalid tokens, mismatched parentheses, zero division and resource bounds. Output result or clear nonzero error.
-
-Requires Python standard library only. No external services or packages. Run all existing tests plus new CLI tests using `python -m unittest discover -s TESTS -p "test_*.py" -v`; execute documented examples. Record skips with IDs (RETRO-0003). QA-0003 symlink integration remains conditional on an available permitted environment; do not change system privileges automatically.
-
-Finish with documented acceptance evidence, catalog, review, retrospective, authorized GitHub push and next plan. Stop before further execution. Risks: numeric rounding, parser recursion and malformed CSV; specify limits before implementation.
+Python standard library only. No files modified by lesson CLIs, no network or packages. Run `python -m unittest discover -s TESTS -p "test_*.py" -v`. Complete review/retrospective/catalog, commit and push to authorized origin/main; prepare but do not execute the next sprint. Risks: floating-point rounding and simple tokenization are documented rather than hidden.

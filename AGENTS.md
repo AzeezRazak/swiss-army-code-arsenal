@@ -23,7 +23,7 @@ Before planning, review the roadmap, backlog, previous reviews, retrospectives, 
 
 ## Sprint size limit
 
-Each sprint TODO may include at most five runnable script deliverables in total, across all tasks. Count separate client/server scripts and language variants individually. Tests, documentation, fixtures and non-runnable support modules do not count. List the scripts and total in the sprint plan; defer additional scripts to a later sprint. The backlog may contain more than five future items.
+From Sprint 0003 onward, each development sprint TODO must include at least five and at most ten runnable script deliverables in total, across all tasks. Count separate client/server scripts and language variants individually. Tests, documentation, fixtures and non-runnable support modules do not count. List the scripts and total in the sprint plan; defer additional scripts to a later sprint. The backlog is not subject to this per-sprint limit. Prioritize fundamental Python for Sprint 0003 and the next few proposals until the owner redirects the focus. Historical sprint sizes remain unchanged.
 
 ## Engineering quality
 

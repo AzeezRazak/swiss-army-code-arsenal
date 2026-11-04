@@ -7,6 +7,6 @@ Folder: `SCRIPTS/01-programming-languages`
 
 Planned coverage: Language idioms, error handling, concurrency and interoperability.
 
-Candidate languages: Python, C, Rust. No implementations delivered yet.
+Candidate languages: Python, C, Rust. Delivered: [five Python fundamentals lessons](python-fundamentals/README.md).
 
 See the [roadmap](../../ROADMAP.md), [backlog](../../TODO/BACKLOG.md) and [quality standards](../../DOCS/CODING-STANDARDS.md).
