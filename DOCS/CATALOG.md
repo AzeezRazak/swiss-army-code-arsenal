@@ -37,3 +37,7 @@ Folder: `SCRIPTS/01-programming-languages/python-fundamentals/`. Python; verifie
 | PY-0005 | [word_counts.py](../SCRIPTS/01-programming-languages/python-fundamentals/word_counts.py) | Dictionary get, updates and sorted keys | `"Python python code"` | Passed |
 
 Run with `python` and the linked file path from the repository root. [Guide](../SCRIPTS/01-programming-languages/python-fundamentals/README.md). Current totals: 13 runnable scripts, 12 utility implementations, 8 domains, 3 completed sprints. Latest tests: 43 passed, 0 failed, 1 skipped (QA-0003).
+
+## Maintenance branch improvements
+
+On `improve/jsonl-and-sha256`, DATA-0001 adds `--max-line-bytes` (default 1 MiB including newline); SEC-0001 adds `--check SHA256`. See their linked guides above and [maintenance record](../TODO/IMPROVEMENTS-0001.md). Latest branch suite: 52 passed, zero failed, one existing symlink skip (53 tests). No new runnable scripts.

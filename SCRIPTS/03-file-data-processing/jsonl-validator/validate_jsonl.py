@@ -4,7 +4,7 @@
 # Input/output: File path; outputs valid line count or first failing line.
 # Requirements: Python 3.10+; standard library only.
 # Usage (from repository root): python SCRIPTS/03-file-data-processing/jsonl-validator/validate_jsonl.py EXAMPLES/sample.jsonl
-# Limitations: Memory depends on longest line; syntax validation only.
+# Limitations: Configurable physical-line byte limit; syntax validation only.
 # ========================================================================
 """Validate UTF-8 JSON Lines without modifying the input."""
 import argparse
@@ -17,13 +17,23 @@ def reject_constant(value):
     raise ValueError(f"non-JSON constant: {value}")
 
 
-def validate(path):
-    """Return line count or raise ValueError with the first failing line."""
+def validate(path, max_line_bytes=1024 * 1024):
+    """Validate lines bounded in bytes, including LF/CRLF; return line count."""
+    if (not isinstance(max_line_bytes, int) or isinstance(max_line_bytes, bool)
+            or not 1 <= max_line_bytes <= sys.maxsize - 1):
+        raise ValueError("max_line_bytes must be an integer from 1 to sys.maxsize - 1")
     # An empty file has zero records and is considered valid.
     count = 0
     with open(path, "rb") as source:
         # Decode each physical line separately so encoding errors retain line numbers.
-        for count, raw in enumerate(source, 1):
+        while True:
+            # Read at most one byte beyond the budget, never an unbounded line.
+            raw = source.readline(max_line_bytes + 1)
+            if not raw:
+                break
+            count += 1
+            if len(raw) > max_line_bytes:
+                raise ValueError(f"line {count}: exceeds {max_line_bytes} byte limit")
             try:
                 # Reject invalid UTF-8 and nonstandard NaN/Infinity JSON constants.
                 json.loads(raw.decode("utf-8"), parse_constant=reject_constant)
@@ -37,10 +47,12 @@ def main():
     # Define the command-line interface and built-in help output.
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("path")
+    parser.add_argument("--max-line-bytes", type=int, default=1024 * 1024,
+                        help="physical line byte limit including newline (default: 1048576)")
     # Parse and type-check command-line arguments before doing any work.
     args = parser.parse_args()
     try:
-        print(f"Valid: {validate(args.path)} lines")
+        print(f"Valid: {validate(args.path, args.max_line_bytes)} lines")
     except (OSError, ValueError) as error:
         # Keep diagnostics off stdout so successful output stays machine-readable.
         print(f"error: {error}", file=sys.stderr)

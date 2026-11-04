@@ -9,7 +9,7 @@ Read binary data in 1 MiB chunks and print a lowercase SHA-256 digest. Empty fil
 
 ## Requirements and setup
 
-Python 3.10+ with standard-library modules only (SQLite support required for the database example). No installation or third-party packages. Verified on Windows with Python 3.13.9 and SQLite 3.51.0; other versions and operating systems are unverified. Run commands from the repository root.
+Python 3.10+ with standard-library modules only. No installation or third-party packages. Verified on Windows with Python 3.13.9 ; other versions and operating systems are unverified. Run commands from the repository root.
 
 ## Usage
 
@@ -32,3 +32,13 @@ python -m unittest discover -s TESTS -p "test_*.py" -v
 ```
 
 See [acceptance tests](../../../TESTS/test_utilities.py) and [sprint review](../../../TODO/SPRINT-0001/REVIEW.md).
+
+## Verify an expected digest
+
+```powershell
+python SCRIPTS/08-cybersecurity/sha256-file/sha256_file.py EXAMPLES/abc.txt --check ba7816bf8f01cfea414140de5dae2223b00361a396177a9cb410ff61f20015ad
+```
+
+A match prints `OK` and exits 0. A mismatch prints an error to stderr, leaves stdout empty and exits 1. Expected digests must be exactly 64 ASCII hexadecimal characters; uppercase is accepted. Malformed expected digests are rejected before file access with exit 2. Read errors remain exit 1. Omitting `--check` preserves digest-only output. Obtain the expected digest from a trusted source; comparison does not establish authenticity by itself.
+
+Additional regression checks: [TESTS/test_script_improvements.py](../../../TESTS/test_script_improvements.py).
