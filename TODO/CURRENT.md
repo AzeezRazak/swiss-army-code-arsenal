@@ -7,8 +7,8 @@ Folder: `TODO`
 - Current proposed sprint: SPRINT-0004; awaiting authorization. Five scripts within the new 5-10 range.
 - Sprint 0003 authorized, started and completed 2026-11-05: five fundamental Python scripts delivered.
 - Owner focus: fundamental Python for the next few sprints. CSV/interpreter tasks deferred.
-- Active maintenance branch: improve/jsonl-and-sha256; publication authorized for this branch only. Main remains unchanged. Repository: https://github.com/AzeezRazak/swiss-army-code-arsenal.git.
-- Verification: 44 discovered tests, 43 passed, zero failed, one existing Windows symlink skip (QA-0003). Junction test passed.
+- Active branch: main. Owner authorized merging/pushing improve/jsonl-and-sha256 into main on 2026-11-05. Repository: https://github.com/AzeezRazak/swiss-army-code-arsenal.git.
+- Verification: 53 discovered tests, 52 passed, zero failed, one existing Windows symlink skip (QA-0003). Junction test passed.
 - Pending decisions: Sprint 0004 execution; license choice.
 
 ## Documents
@@ -23,4 +23,4 @@ Folder: `TODO`
 
 ## Authorized maintenance
 
-[Two-script improvement record](IMPROVEMENTS-0001.md): bounded JSONL lines and SHA-256 expected-digest verification. Separate branch; no Sprint 0004 execution.
+[Two-script improvement record](IMPROVEMENTS-0001.md): bounded JSONL lines and SHA-256 expected-digest verification. Merged into main by owner instruction; no Sprint 0004 execution.

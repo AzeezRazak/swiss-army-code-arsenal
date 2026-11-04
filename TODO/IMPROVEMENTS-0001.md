@@ -16,3 +16,7 @@ Branch: improve/jsonl-and-sha256. Destination: origin/improve/jsonl-and-sha256 a
 Verification: `python -m unittest discover -s TESTS -p "test_*.py" -q` ran 53 tests in 5.737 seconds on Windows/Python 3.13.9: 52 passed, zero failed, one existing symlink skip (QA-0003). Original regression tests remain passing. No dependencies installed. Documentation links and Git whitespace checked before commit. Publication outcome is checked after push via upstream tracking and reported to owner.
 
 Limitations: JSONL default now rejects lines over 1 MiB; callers can raise the limit deliberately. Neither utility is a defense against unlimited-duration device streams. SHA-256 verification still requires a trusted expected digest and stable input file. Cross-platform verification is not claimed.
+
+## Integration into main
+
+Owner authorized pushing to main on 2026-11-05. Fast-forwarded main to implementation commit 2a82225 after fetching origin. Re-ran all 53 tests: 52 passed, zero failed, one existing symlink skip. Improvement branch retained.
