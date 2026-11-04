@@ -48,3 +48,7 @@ Use conventional commits and preserve user changes. Before pushing inspect chang
 TODO is authoritative. Keep stable backlog identifiers, scope, dates, task status, evidence and pending decisions current. Maintain DOCS/DECISIONS.md and DOCS/LESSONS-LEARNED.md. Never relax authorization or workspace boundaries as a process improvement.
 
 End a sprint with objective, deliverables, verification limitations, commit hashes/branch/push status, blockers, retrospective actions, meaningful coverage changes and next plan. End with: NEXT SPRINT PREPARED - AWAITING HUMAN AUTHORIZATION.
+
+## Multi-language projects
+
+When the owner requests a multi-language project, place it in `projects/<project-name>/` at the repository root. Keep all scripts, source, tests and configuration for that project inside its subfolder. Include a README describing language roles, setup, interfaces, usage, tests and limitations. Apply the same comment and document-location standards. Link project entries from DOCS/CATALOG.md and maintain management records in TODO. Creating the projects folder alone does not authorize project implementation.
