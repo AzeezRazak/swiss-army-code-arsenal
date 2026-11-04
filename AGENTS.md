@@ -52,3 +52,13 @@ End a sprint with objective, deliverables, verification limitations, commit hash
 ## Multi-language projects
 
 When the owner requests a multi-language project, place it in `projects/<project-name>/` at the repository root. Keep all scripts, source, tests and configuration for that project inside its subfolder. Include a README describing language roles, setup, interfaces, usage, tests and limitations. Apply the same comment and document-location standards. Link project entries from DOCS/CATALOG.md and maintain management records in TODO. Creating the projects folder alone does not authorize project implementation.
+
+## Dated transcripts
+
+Maintain `transcripts/YYYY-MM-DD.md` using Asia/Singapore dates. Append the owner's messages, exact executed shell commands/tool actions, working directory/branch, and observed results including failures, retries, skips and commit/push outcomes. Record known timestamps only; do not invent them. Label historical reconstructions, summaries and omitted payloads explicitly. Redact credentials and unnecessary personal identifiers visibly. Never include hidden reasoning or confidential system/developer instructions. Keep File/Folder metadata and relative links; follow transcripts/README.md. Update the day's record before final reporting; do not claim unexecuted operations succeeded.
+
+## Ongoing project record maintenance
+
+During every project interaction, update the dated transcript without requiring a separate reminder, including questions/decisions, implementation, reviews, tests, failures, commits and publication outcomes. Update affected project records (current state, backlog, catalog, decisions, sprint documents and usage guides) when facts change. Do not rewrite unaffected historical records merely to touch every file.
+
+The owner authorized publishing these redacted project transcripts to the existing public repository on 2026-11-05. Include them with authorized project commits/pushes. This is a working practice for agents reading AGENTS.md, not a background recorder or scheduled automation. Activity performed outside the available session is not automatically observed; add it only when evidence is provided, with its source identified. Do not claim complete capture of unavailable sessions or external actions.

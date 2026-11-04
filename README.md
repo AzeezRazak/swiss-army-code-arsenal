@@ -13,6 +13,7 @@ A growing library of practical, reusable, documented and tested programming impl
 - [Current state](TODO/CURRENT.md): authorization, blockers and sprint links.
 - [Backlog](TODO/BACKLOG.md): prioritized work and acceptance criteria.
 - [Catalog](DOCS/CATALOG.md): implemented and verified capabilities.
+- [Transcripts](transcripts/README.md): dated user requests, commands and observed results.
 - [Multi-language projects](projects/README.md): complete projects organized in individual subfolders.
 - [Contributing](CONTRIBUTING.md) and [operating rules](AGENTS.md).
 
