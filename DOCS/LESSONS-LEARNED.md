@@ -19,4 +19,4 @@ Source: Sprint 0002. Real symbolic-link creation failed with WinError 1314; a re
 
 ## LESSON-0004 - Beginner lessons need explicit policies
 
-Source Sprint 0003: tests verify every grading threshold and explain whitespace/casefold behavior. These choices are teaching contracts, not universal domain rules. Action RETRO-0004: Codex, Sprint 0004, pair each documented example with a deterministic CLI test; completion requires five verified examples. Current evidence: all five Sprint 0003 examples passed. Future action effectiveness remains pending.
+Source Sprint 0003: tests verify every grading threshold and explain whitespace/casefold behavior. These choices are teaching contracts, not universal domain rules. Action RETRO-0004: Codex, Sprint 0004, pair each documented example with a deterministic CLI test; completion requires five verified examples. Outcome: all five Sprint 0004 examples passed as subprocess tests. Effectiveness confirmed for this sprint; continue the practice in Sprint 0005.

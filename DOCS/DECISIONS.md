@@ -36,3 +36,7 @@ Owner requested purpose blocks, clear comments explaining operations, and file l
 ## DEC-0008 - Fundamental Python and revised sprint size
 
 On 2026-11-05 the owner authorized revising/executing Sprint 0003 around fundamental Python and replaced the prior cap with minimum five/maximum ten runnable scripts per future development sprint. Deliver five focused lessons now; prioritize Python fundamentals in the next few proposals. Deferred DATA-0002 and COMP-0002. Historical sprint sizes are unchanged.
+
+## DEC-0009 - Sprint 0004 execution
+
+On 2026-11-06 the owner authorized `execute next sprint`. Sprint 0004 delivered five standard-library Python fundamentals scripts, with paired CLI tests and explicit input limits. DATA-0002 and COMP-0002 remain deferred while the owner-selected Python focus continues.

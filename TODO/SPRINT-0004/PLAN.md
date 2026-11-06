@@ -4,7 +4,7 @@ File: `TODO/SPRINT-0004/PLAN.md`
 
 Folder: `TODO/SPRINT-0004`
 
-PLANNED - AWAITING HUMAN AUTHORIZATION. No execution started. Python fundamentals remains the owner-selected focus. Read [previous review](../SPRINT-0003/REVIEW.md) and [lessons](../../DOCS/LESSONS-LEARNED.md) first.
+AUTHORIZED by owner message `execute next sprint` on 2026-11-06; completed. Python fundamentals remains the owner-selected focus. Read [previous review](../SPRINT-0003/REVIEW.md) and [lessons](../../DOCS/LESSONS-LEARNED.md) first.
 
 ## Script budget: 5/10 (minimum 5)
 
@@ -18,4 +18,4 @@ All planned scripts in `SCRIPTS/01-programming-languages/python-fundamentals-2/`
 
 Python standard library only. Each script needs a purpose block, meaningful comments, a reusable function, documented CLI example and tests. No file mutation/network/packages. Define numerical and input-size limits before implementation. Run the full unittest discovery command and all five README examples. Apply RETRO-0004 by pairing examples with CLI tests. Report QA-0003 honestly if still unavailable.
 
-Finish review/retrospective/catalog, commit and push to authorized origin/main, prepare next proposal and stop. No automatic execution. Start/completion: not started/not completed.
+Finish review/retrospective/catalog, commit and push to authorized origin/main, prepare next proposal and stop. No automatic execution. Start/completion: 2026-11-06 / 2026-11-06.
