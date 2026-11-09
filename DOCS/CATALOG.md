@@ -82,7 +82,7 @@ Run with `python` and the linked file path from the repository root. Current tot
 
 ## Sprint 0007 - web vulnerability scanner MVP
 
-Folder: `projects/python-security-research/web-vulnerability-scanner/`. Python; verified on Windows/Python 3.13.9 on 2026-11-09. Fixture-only; no live target testing.
+Folder: `projects/python-security-research/web-vulnerability-scanner/`. Python; verified on Windows/Python 3.13.9 on 2026-11-09. Live mode is restricted to explicit allowlists and was verified only against a local loopback server.
 
 | ID | Script | Basic description | Status |
 |---|---|---|---|
@@ -92,7 +92,7 @@ Folder: `projects/python-security-research/web-vulnerability-scanner/`. Python; 
 | WEB-0004 | [idor_detector.py](../projects/python-security-research/web-vulnerability-scanner/idor_detector.py) | Two-account response comparison | Passed |
 | WEB-0005 | [misconfiguration_detector.py](../projects/python-security-research/web-vulnerability-scanner/misconfiguration_detector.py) | Header and cookie-policy signals | Passed |
 
-Current totals: 33 runnable scripts, 32 utility and teaching implementations, 12 domains, 7 completed sprints. Latest tests: 83 passed, 0 failed, 1 skipped (QA-0003). The PHP research scanner remains specification-only.
+Current totals: 33 runnable scripts, 32 utility and teaching implementations, 12 domains, 7 completed sprints. Latest scanner tests include the bounded live loopback path; no public target verification is claimed.
 
 ## Sprint 0008 - PHP vulnerability research MVP
 
@@ -107,7 +107,7 @@ Folder: `projects/python-security-research/php-vulnerability-research-scanner/`.
 | PHP-0005 | [sanitizer_parser.py](../projects/python-security-research/php-vulnerability-research-scanner/sanitizer_parser.py) | Inert sanitizer signal parsing | Passed |
 | PHP-0006 | [build_manifest.py](../projects/python-security-research/php-vulnerability-research-scanner/build_manifest.py) | Local build reproducibility metadata | Passed |
 
-Current totals: 34 runnable scripts, 33 utility and teaching implementations, 12 domains, 8 completed sprints. Latest tests: 89 passed, 0 failed, 1 skipped (QA-0003). Both scanner projects are local-fixture MVPs.
+Current totals: 34 runnable scripts, 33 utility and teaching implementations, 12 domains, 8 completed sprints. Latest full suite: 91 passed, 0 failed, 1 skipped (QA-0003). The PHP scanner remains local-source/log research; no public target or PHP binary execution is claimed.
 
 ## Security research dashboard
 

@@ -6,12 +6,14 @@
 # Limits: all observations are inert local fixtures; no live target verification is claimed.
 """Positive, negative, ambiguous and CLI tests for the web scanner MVP."""
 import importlib.util
+from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import json
 from pathlib import Path
 import subprocess
 import sys
 import tempfile
 import unittest
+from urllib.parse import parse_qs, urlparse
 
 BASE = Path(__file__).resolve().parents[1] / "projects/python-security-research/web-vulnerability-scanner"
 
@@ -97,6 +99,37 @@ class WebScannerTests(unittest.TestCase):
             payload = json.loads(report.read_text(encoding="utf-8"))
             self.assertEqual(payload["module"], "web-scanner")
             self.assertGreaterEqual(len(payload["findings"]), 4)
+
+    def test_live_loopback_observation_requires_allowlist(self):
+        class Handler(BaseHTTPRequestHandler):
+            def do_GET(self):
+                value = parse_qs(urlparse(self.path).query).get("q", ["ok"])[0]
+                body = "sqlite error" if value == "'" else f"<p>{value}</p>"
+                data = body.encode()
+                self.send_response(200)
+                self.send_header("Content-Type", "text/html")
+                self.send_header("Content-Length", str(len(data)))
+                self.end_headers()
+                self.wfile.write(data)
+
+            def log_message(self, *_args):
+                return
+
+        server = ThreadingHTTPServer(("127.0.0.1", 0), Handler)
+        thread = __import__("threading").Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        try:
+            transport = load("live_transport")
+            config = {"allowed_hosts": ["127.0.0.1"], "targets": [{"url": f"http://127.0.0.1:{server.server_port}/search?q=ok", "parameters": ["q"]}], "delay_seconds": 0.2, "max_requests": 10}
+            observer = transport.LiveObserver(config)
+            fixture = transport.probe_target(observer, observer.targets[0])
+            self.assertTrue(any(item["id"].startswith("sqli-") for item in load("http_observer").scan_fixture(fixture)))
+            with self.assertRaises(ValueError):
+                transport.LiveObserver({"allowed_hosts": ["example.invalid"], "targets": config["targets"]})
+        finally:
+            server.shutdown()
+            server.server_close()
+            thread.join(timeout=2)
 
 
 if __name__ == "__main__":

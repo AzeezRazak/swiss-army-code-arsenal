@@ -52,6 +52,14 @@ class PHPResearchTests(unittest.TestCase):
         sanitizer = load("sanitizer_parser").analyze("ERROR: AddressSanitizer: use-after-free")
         self.assertEqual(sanitizer[0]["evidence"]["signal"], "use-after-free")
 
+    def test_source_risk_analyzer_flags_local_flow_without_execution(self):
+        with tempfile.TemporaryDirectory() as directory:
+            source = Path(directory) / "index.php"
+            source.write_text("<?php\n$name = $_GET['name'];\neval($name);\n", encoding="utf-8")
+            result = load("source_risk_analyzer").analyze(directory)
+            self.assertEqual(result[0]["evidence"]["category"], "dynamic-code")
+            self.assertFalse(result[0]["confirmed"])
+
     def test_build_manifest_redacts_policy_by_rejection(self):
         module = load("build_manifest")
         result = module.analyze({"php_version": "8.x", "compiler": "clang", "commit": "abc", "flags": ["-O1"], "extensions": ["core"]})
