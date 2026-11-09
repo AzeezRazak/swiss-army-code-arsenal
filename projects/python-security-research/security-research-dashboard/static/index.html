@@ -1,0 +1,39 @@
+<!-- Purpose: Local dashboard UI for scan scope, results and exports. -->
+<!-- Location: projects/python-security-research/security-research-dashboard/static/index.html -->
+<!-- Input/output: dashboard API data to accessible browser controls; no credentials or live scanning. -->
+<!-- Requirements: modern browser JavaScript; served by app.py. -->
+<!-- Usage from root: open http://127.0.0.1:8765 after running app.py. -->
+<!-- Limits: local-only dashboard; authentication and remote hosting are intentionally absent. -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Security research dashboard</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">SR</span><div><strong>Security Research</strong><small>local workspace</small></div></div>
+    <nav aria-label="Dashboard sections">
+      <button class="nav-link active" data-view="overview">Overview</button>
+      <button class="nav-link" data-view="scope">Scan scope</button>
+      <button class="nav-link" data-view="results">Results</button>
+      <button class="nav-link" data-view="exports">Exports</button>
+    </nav>
+    <div class="sidebar-note"><span class="dot"></span> Loopback only<br><small>No live scanning from this UI</small></div>
+  </aside>
+  <main class="main">
+    <header class="topbar"><div><p class="eyebrow">PRIVATE CONTROL ROOM</p><h1>Research dashboard</h1></div><div class="local-pill">● LOCAL ONLY</div></header>
+    <section id="overview" class="view active-view">
+      <div class="hero"><div><p class="eyebrow accent">TWO SCANNERS · ONE VIEW</p><h2>Keep the signal<br><em>in your hands.</em></h2><p class="hero-copy">Set an explicit scope, inspect evidence-backed signals, and export clean data for deeper analysis.</p></div><div class="hero-orbit"><span>WEB</span><span>PHP</span><i></i></div></div>
+      <div class="stats" id="stats"><div class="stat-card"><small>Total findings</small><strong>—</strong></div><div class="stat-card"><small>Web scanner</small><strong>—</strong></div><div class="stat-card"><small>PHP research</small><strong>—</strong></div><div class="stat-card warning"><small>High / critical</small><strong>—</strong></div></div>
+      <div class="split-panels"><article class="panel"><div class="panel-head"><div><p class="eyebrow">WORKFLOW</p><h3>Three clean steps</h3></div></div><div class="workflow"><div><b>01</b><span>Define scope</span><small>Targets, methods, accounts</small></div><div><b>02</b><span>Review signals</span><small>Evidence, confidence, limits</small></div><div><b>03</b><span>Export analysis</span><small>JSON, CSV or Markdown</small></div></div></article><article class="panel accent-panel"><p class="eyebrow">GUARDRAIL</p><h3>Human review stays in the loop.</h3><p>Every stored finding is a non-confirming signal. This dashboard never launches scans or marks impact confirmed.</p><button class="text-button" data-view-target="scope">Review scope →</button></article></div>
+    </section>
+    <section id="scope" class="view"><div class="section-heading"><div><p class="eyebrow accent">01 / SCOPE</p><h2>Define your boundary.</h2><p>Keep the scan policy explicit and reviewable before any authorized local work.</p></div><span class="section-tag">SAVED LOCALLY</span></div><div class="panel form-panel"><form id="scope-form"><div class="field-grid"><label>Targets<textarea id="targets" placeholder="app.example.test&#10;http://127.0.0.1:8080"></textarea><small>One host or URL per line.</small></label><label>Methods<textarea id="methods" placeholder="GET&#10;HEAD&#10;OPTIONS"></textarea><small>Allowed methods only.</small></label><label>Permitted accounts<textarea id="accounts" placeholder="account-a&#10;account-b"></textarea><small>Labels only—never credentials.</small></label><label>Callbacks<textarea id="callbacks" placeholder="http://127.0.0.1:9000/callback"></textarea><small>Owner-controlled endpoints only.</small></label></div><label>Notes<textarea id="notes" class="notes" placeholder="Authorization notes, fixture limits, review owner..."></textarea></label><div class="form-actions"><span id="scope-status"></span><button class="primary-button" type="submit">Save scope</button></div></form></div></section>
+    <section id="results" class="view"><div class="section-heading"><div><p class="eyebrow accent">02 / RESULTS</p><h2>Read the evidence.</h2><p>Signals from both scanner databases, kept separate and presented together.</p></div><div class="filter-row"><select id="scanner-filter"><option value="all">All scanners</option><option value="web">Web scanner</option><option value="php">PHP research</option></select><select id="severity-filter"><option value="all">All severity</option><option value="high">High</option><option value="medium">Medium</option><option value="low">Low</option><option value="informational">Informational</option></select></div></div><div class="panel table-panel"><div class="table-wrap"><table><thead><tr><th>Scanner</th><th>Module</th><th>Signal</th><th>Severity</th><th>Confidence</th><th>Review state</th></tr></thead><tbody id="results-body"><tr><td colspan="6" class="empty">Loading findings…</td></tr></tbody></table></div></div></section>
+    <section id="exports" class="view"><div class="section-heading"><div><p class="eyebrow accent">03 / EXPORT</p><h2>Take the data with you.</h2><p>Download sanitized findings for notebooks, spreadsheets or written review.</p></div></div><div class="export-grid"><article class="export-card"><span class="export-icon">{ }</span><h3>JSON</h3><p>Complete structured records for programmatic analysis.</p><button class="secondary-button" data-export="json">Download JSON</button></article><article class="export-card"><span class="export-icon">▦</span><h3>CSV</h3><p>Flat finding rows for spreadsheets and data analysis.</p><button class="secondary-button" data-export="csv">Download CSV</button></article><article class="export-card"><span class="export-icon">✦</span><h3>Markdown</h3><p>Readable evidence index for review notes.</p><button class="secondary-button" data-export="markdown">Download Markdown</button></article></div></section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>

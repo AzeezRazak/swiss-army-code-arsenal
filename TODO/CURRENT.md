@@ -8,7 +8,7 @@ Folder: `TODO`
 - Sprint 0003 authorized, started and completed 2026-11-05: five fundamental Python scripts delivered.
 - Owner focus: two separate Python security-research projects under `projects/python-security-research/`. CSV/interpreter tasks and scanner implementation remain deferred.
 - Active branch: main. Owner authorized merging/pushing improve/jsonl-and-sha256 into main on 2026-11-05. Repository: https://github.com/AzeezRazak/swiss-army-code-arsenal.git.
-- Verification: 89 discovered tests, 89 passed, zero failed, one existing Windows symlink skip (QA-0003). Junction test passed. Windows/Python 3.13.9 only.
+- Verification: dashboard focused tests passed 3/3; full suite verification is pending after the local dashboard addition. Prior scanner baseline was 89 passed, zero failed, one existing Windows symlink skip (QA-0003). Windows/Python 3.13.9 only.
 - Pending decisions: Sprint 0009 authorization; PHP local toolchain/sanitizer scope and primary-source verification for supplied CVE labels; license choice.
 
 ## Documents
@@ -30,6 +30,7 @@ Folder: `TODO`
 - [Sprint 0008 PHP scanner plan](SPRINT-0008/PLAN.md)
 - [Sprint 0007 review](SPRINT-0007/REVIEW.md)
 - [Sprint 0008 review](SPRINT-0008/REVIEW.md)
+- [Security research dashboard](../projects/python-security-research/security-research-dashboard/README.md)
 
 ## Authorized maintenance
 

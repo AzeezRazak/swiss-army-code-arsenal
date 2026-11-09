@@ -35,3 +35,7 @@ Source Sprint 0007: the first focused run found a SQLite connection left open, b
 ## LESSON-0008 - One entry point clarifies scanner safety
 
 Source Sprint 0008: the PHP scanner exposes one command while keeping analysis modules internal. Evidence: five focused tests and 89 full-suite tests passed; local logs and source trees were analyzed without executing code. Action: preserve one command, bounded fixtures and explicit non-confirming findings for future dynamic-lab work.
+
+## LESSON-0009 - Dashboard boundaries should be explicit
+
+Source: local security research dashboard addition. Observation: a review UI can safely consume scanner evidence without becoming an unbounded scan controller. Action: keep scope persistence separate from scanner databases, bind to loopback, and make exports read-only and sanitized. Owner: Codex; target: future dashboard authentication/live-control authorization.

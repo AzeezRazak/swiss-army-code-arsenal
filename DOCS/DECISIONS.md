@@ -56,3 +56,7 @@ On 2026-11-09 the owner clarified that the scanner scripts themselves were requi
 ## DEC-0013 - PHP scanner MVP execution
 
 On 2026-11-09 the owner requested the PHP scanner be completed properly. Sprint 0008 delivered one user-facing command with internal CVE-intake, source-diff, lifecycle, sanitizer-log and build-manifest modules. All findings remain unconfirmed research signals; no PHP process, compiler, network target or exploit payload is executed.
+
+## DEC-0014 - Local scanner dashboard (2026-11-09)
+
+Build the owner-facing dashboard as a sibling project under `projects/python-security-research/`. It stores only a bounded scope record, reads the existing scanner SQLite outputs, and exports sanitized finding fields. Bind to loopback by default; defer authentication, live scan control and credential handling until separately authorized.

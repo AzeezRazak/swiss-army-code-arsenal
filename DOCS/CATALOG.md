@@ -109,6 +109,14 @@ Folder: `projects/python-security-research/php-vulnerability-research-scanner/`.
 
 Current totals: 34 runnable scripts, 33 utility and teaching implementations, 12 domains, 8 completed sprints. Latest tests: 89 passed, 0 failed, 1 skipped (QA-0003). Both scanner projects are local-fixture MVPs.
 
+## Security research dashboard
+
+Folder: `projects/python-security-research/security-research-dashboard/`. Python standard library plus browser-native HTML/CSS/JavaScript; verified on Windows/Python 3.13.9 on 2026-11-09. This is a local-only web application and is not counted as a scanner detector script.
+
+| Project | Purpose | Status |
+|---|---|---|
+| [security-research-dashboard](../projects/python-security-research/security-research-dashboard/README.md) | Set authorized scope, review stored findings from both scanners, and export JSON/CSV/Markdown | Passed focused tests |
+
 ## Integrated maintenance improvements
 
 Merged from `improve/jsonl-and-sha256` into `main` by owner authorization: DATA-0001 adds `--max-line-bytes` (default 1 MiB including newline); SEC-0001 adds `--check SHA256`. See their linked guides above and [maintenance record](../TODO/IMPROVEMENTS-0001.md). Latest branch suite: 52 passed, zero failed, one existing symlink skip (53 tests). No new runnable scripts.
