@@ -34,7 +34,7 @@ def observation(body="ok", status=200, headers=None, cookies=None, url="http://a
 
 class WebScannerTests(unittest.TestCase):
     def test_observer_bounds_and_normalizes(self):
-        module = load("http_observer")
+        module = load("observation")
         result = module.normalize_observation(observation(headers={"Content-Type": "text/plain"}))
         self.assertEqual(result["headers"], {"content-type": "text/plain"})
         with self.assertRaises(ValueError):
@@ -69,7 +69,7 @@ class WebScannerTests(unittest.TestCase):
             self.assertEqual(payload["findings"][0]["evidence"]["token"], "[REDACTED]")
 
     def test_detector_cli_writes_database_and_report(self):
-            fixture = {"marker": "MARK", "observations": [observation("MARK")]}
+        fixture = {"marker": "MARK", "observations": [observation("MARK")]}
         with tempfile.TemporaryDirectory() as directory:
             fixture_path = Path(directory) / "xss.json"
             database = Path(directory) / "scanner.sqlite3"
@@ -79,6 +79,24 @@ class WebScannerTests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertTrue(database.exists())
             self.assertEqual(json.loads(report.read_text(encoding="utf-8"))["findings"][0]["status"], "signal")
+
+    def test_single_entry_point_runs_all_detectors(self):
+        fixture = {
+            "sqli": {"baseline": observation(), "tests": [observation("sqlite error", 500)]},
+            "xss": {"marker": "MARK", "observations": [observation("<p>MARK</p>")]},
+            "idor": {"resource": "/api/order/1", "account_a": observation("order"), "account_b": observation("order")},
+            "misconfiguration": observation(url="https://app.test"),
+        }
+        with tempfile.TemporaryDirectory() as directory:
+            fixture_path = Path(directory) / "scan.json"
+            database = Path(directory) / "scanner.sqlite3"
+            report = Path(directory) / "web_scan.json"
+            fixture_path.write_text(json.dumps(fixture), encoding="utf-8")
+            result = subprocess.run([sys.executable, str(BASE / "http_observer.py"), str(fixture_path), "--database", str(database), "--report", str(report)], capture_output=True, text=True, timeout=5)
+            self.assertEqual(result.returncode, 0, result.stderr)
+            payload = json.loads(report.read_text(encoding="utf-8"))
+            self.assertEqual(payload["module"], "web-scanner")
+            self.assertGreaterEqual(len(payload["findings"]), 4)
 
 
 if __name__ == "__main__":
