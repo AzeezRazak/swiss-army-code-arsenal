@@ -4,7 +4,7 @@ File: `TODO/SPRINT-0008/PLAN.md`
 
 Folder: `TODO/SPRINT-0008`
 
-Status: proposed; awaiting fresh authorization. This sprint implements local source/log analysis only; it does not build PHP, reproduce unverified CVEs or execute memory-safety experiments automatically.
+Status: AUTHORIZED by owner request `php scanner?` on 2026-11-09; completed. This sprint implemented local source/log analysis only; it did not build PHP, reproduce unverified CVEs or execute memory-safety experiments automatically.
 
 ## Script budget: 5/10
 

@@ -94,6 +94,21 @@ Folder: `projects/python-security-research/web-vulnerability-scanner/`. Python; 
 
 Current totals: 33 runnable scripts, 32 utility and teaching implementations, 12 domains, 7 completed sprints. Latest tests: 83 passed, 0 failed, 1 skipped (QA-0003). The PHP research scanner remains specification-only.
 
+## Sprint 0008 - PHP vulnerability research MVP
+
+Folder: `projects/python-security-research/php-vulnerability-research-scanner/`. Python; verified on Windows/Python 3.13.9 on 2026-11-09. Local source/log fixtures only; no PHP binary execution.
+
+| ID | Component | Basic description | Status |
+|---|---|---|---|
+| PHP-0001 | [php_research_scanner.py](../projects/python-security-research/php-vulnerability-research-scanner/php_research_scanner.py) | Single command for all PHP research analyses | Passed |
+| PHP-0002 | [cve_intake.py](../projects/python-security-research/php-vulnerability-research-scanner/cve_intake.py) | Unconfirmed CVE intake records | Passed |
+| PHP-0003 | [patch_compare.py](../projects/python-security-research/php-vulnerability-research-scanner/patch_compare.py) | Bounded local source comparison | Passed |
+| PHP-0004 | [lifecycle_analyzer.py](../projects/python-security-research/php-vulnerability-research-scanner/lifecycle_analyzer.py) | Synthetic request lifecycle analysis | Passed |
+| PHP-0005 | [sanitizer_parser.py](../projects/python-security-research/php-vulnerability-research-scanner/sanitizer_parser.py) | Inert sanitizer signal parsing | Passed |
+| PHP-0006 | [build_manifest.py](../projects/python-security-research/php-vulnerability-research-scanner/build_manifest.py) | Local build reproducibility metadata | Passed |
+
+Current totals: 34 runnable scripts, 33 utility and teaching implementations, 12 domains, 8 completed sprints. Latest tests: 89 passed, 0 failed, 1 skipped (QA-0003). Both scanner projects are local-fixture MVPs.
+
 ## Integrated maintenance improvements
 
 Merged from `improve/jsonl-and-sha256` into `main` by owner authorization: DATA-0001 adds `--max-line-bytes` (default 1 MiB including newline); SEC-0001 adds `--check SHA256`. See their linked guides above and [maintenance record](../TODO/IMPROVEMENTS-0001.md). Latest branch suite: 52 passed, zero failed, one existing symlink skip (53 tests). No new runnable scripts.

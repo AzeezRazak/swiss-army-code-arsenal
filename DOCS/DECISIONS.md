@@ -52,3 +52,7 @@ On 2026-11-09 the owner authorized all three proposed tracks: foundation utiliti
 ## DEC-0012 - Web scanner MVP execution
 
 On 2026-11-09 the owner clarified that the scanner scripts themselves were required. Sprint 0007 therefore delivered five fixture-only web scanner scripts with SQLite/JSON reports and tests. Live targets, exploit payloads, external scanner CLIs and PHP research execution remain out of scope.
+
+## DEC-0013 - PHP scanner MVP execution
+
+On 2026-11-09 the owner requested the PHP scanner be completed properly. Sprint 0008 delivered one user-facing command with internal CVE-intake, source-diff, lifecycle, sanitizer-log and build-manifest modules. All findings remain unconfirmed research signals; no PHP process, compiler, network target or exploit payload is executed.

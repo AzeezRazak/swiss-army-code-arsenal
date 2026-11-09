@@ -4,7 +4,7 @@ File: `projects/python-security-research/SPECIFICATION.md`
 
 Folder: `projects/python-security-research`
 
-Status: web scanner MVP delivered under Sprint 0007; PHP research scanner remains proposed and unimplemented.
+Status: web scanner MVP delivered under Sprint 0007; PHP research scanner MVP delivered under Sprint 0008. Both remain local-fixture research tools.
 
 ## 1. Objectives and boundaries
 

@@ -31,3 +31,7 @@ Source Sprint 0006: scope, evidence, scoring, rate-budget and fixture-replay uti
 ## LESSON-0007 - Explicit resource cleanup is part of security tooling
 
 Source Sprint 0007: the first focused run found a SQLite connection left open, blocking Windows temporary-directory cleanup. The connection was explicitly closed and the focused/full suites then passed. Action: future detector modules must test database, file and process cleanup on the target platform before review.
+
+## LESSON-0008 - One entry point clarifies scanner safety
+
+Source Sprint 0008: the PHP scanner exposes one command while keeping analysis modules internal. Evidence: five focused tests and 89 full-suite tests passed; local logs and source trees were analyzed without executing code. Action: preserve one command, bounded fixtures and explicit non-confirming findings for future dynamic-lab work.
