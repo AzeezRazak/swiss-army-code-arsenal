@@ -121,14 +121,17 @@ class WebScannerTests(unittest.TestCase):
         thread.start()
         try:
             transport = load("live_transport")
-            config = {"allowed_hosts": ["127.0.0.1"], "targets": [{"url": f"http://127.0.0.1:{server.server_port}/search?q=ok", "parameters": ["q"]}], "delay_seconds": 0.2, "max_requests": 10}
+            config = {"scope": {"rules": [{"id": "local", "scheme": "http", "hostname": "127.0.0.1", "port": server.server_port, "path_prefixes": ["/search"], "exclude_prefixes": ["/search/private"], "methods": ["GET"]}]}, "targets": [{"url": f"http://127.0.0.1:{server.server_port}/search?q=ok", "methods": ["GET"], "parameters": ["q"]}], "delay_seconds": 0.2, "max_requests": 10}
             observer = transport.LiveObserver(config)
+            self.assertEqual(len(observer.request_plan()), 4)
             fixture = transport.probe_target(observer, observer.targets[0])
             findings = load("http_observer").scan_fixture(fixture)
             self.assertTrue(any(item["id"].startswith("sqli-") for item in findings))
             self.assertFalse(any(item["id"].startswith("idor-") for item in findings))
             with self.assertRaises(ValueError):
-                transport.LiveObserver({"allowed_hosts": ["example.invalid"], "targets": config["targets"]})
+                transport.LiveObserver({"scope": {"rules": [{"scheme": "http", "hostname": "127.0.0.1", "port": server.server_port, "path_prefixes": ["/"], "methods": ["HEAD"]}]}, "targets": config["targets"]})
+            with self.assertRaises(ValueError):
+                transport.LiveObserver({"scope": {"rules": [{"scheme": "http", "hostname": "127.0.0.1", "port": server.server_port, "path_prefixes": ["/"], "exclude_prefixes": ["/search"], "methods": ["GET"]}]}, "targets": config["targets"]})
         finally:
             server.shutdown()
             server.server_close()
