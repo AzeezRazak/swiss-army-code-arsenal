@@ -40,3 +40,7 @@ On 2026-11-05 the owner authorized revising/executing Sprint 0003 around fundame
 ## DEC-0009 - Sprint 0004 execution
 
 On 2026-11-06 the owner authorized `execute next sprint`. Sprint 0004 delivered five standard-library Python fundamentals scripts, with paired CLI tests and explicit input limits. DATA-0002 and COMP-0002 remain deferred while the owner-selected Python focus continues.
+
+## DEC-0010 - Sprint 0005 execution
+
+On 2026-11-09 the owner authorized `execute another sprint`. Sprint 0005 continued the prepared Python fundamentals proposal with five standard-library scripts: nested records, generators, bounded text parsing, dataclasses and sibling modules. DATA-0002 and COMP-0002 remain deferred.

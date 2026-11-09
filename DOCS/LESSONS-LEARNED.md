@@ -20,3 +20,6 @@ Source: Sprint 0002. Real symbolic-link creation failed with WinError 1314; a re
 ## LESSON-0004 - Beginner lessons need explicit policies
 
 Source Sprint 0003: tests verify every grading threshold and explain whitespace/casefold behavior. These choices are teaching contracts, not universal domain rules. Action RETRO-0004: Codex, Sprint 0004, pair each documented example with a deterministic CLI test; completion requires five verified examples. Outcome: all five Sprint 0004 examples passed as subprocess tests. Effectiveness confirmed for this sprint; continue the practice in Sprint 0005.
+## LESSON-0005 - Resource policies belong beside file examples
+
+Source Sprint 0005: the text-file lesson rejects symlinks, non-files, invalid UTF-8 and inputs over 1 MiB, with a temporary-file test for valid and missing paths. Observation/evidence: the initial full suite exposed two test defects before the corrected 71-test run passed. Action RETRO-0006: keep filesystem examples isolated in temporary directories and run focused tests before the full suite. Owner Codex; target Sprint 0006.

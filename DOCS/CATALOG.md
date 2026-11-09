@@ -52,6 +52,20 @@ Folder: `SCRIPTS/01-programming-languages/python-fundamentals-2/`. Python; verif
 
 Run with `python` and the linked file path from the repository root. [Guide](../SCRIPTS/01-programming-languages/python-fundamentals-2/README.md). Current totals: 18 runnable scripts, 17 utility and teaching implementations, 8 domains, 4 completed sprints. Latest tests: 63 passed, 0 failed, 1 skipped (QA-0003).
 
+## Sprint 0005 - third Python fundamentals set
+
+Folder: `SCRIPTS/01-programming-languages/python-fundamentals-3/`. Python; verified on Windows/Python 3.13.9 on 2026-11-09.
+
+| ID | Script | Basic description | Status |
+|---|---|---|---|
+| PY-0011 | [nested_records.py](../SCRIPTS/01-programming-languages/python-fundamentals-3/nested_records.py) | Nested dictionaries and aggregate traversal | Passed |
+| PY-0012 | [generator_pipeline.py](../SCRIPTS/01-programming-languages/python-fundamentals-3/generator_pipeline.py) | Lazy generators and filtering | Passed |
+| PY-0013 | [text_file_summary.py](../SCRIPTS/01-programming-languages/python-fundamentals-3/text_file_summary.py) | Bounded UTF-8 text-file parsing | Passed |
+| PY-0014 | [dataclass_tasks.py](../SCRIPTS/01-programming-languages/python-fundamentals-3/dataclass_tasks.py) | Frozen dataclass records and defaults | Passed |
+| PY-0015 | [module_usage.py](../SCRIPTS/01-programming-languages/python-fundamentals-3/module_usage.py) | Sibling module imports and reuse | Passed |
+
+Run with `python` and the linked file path from the repository root. [Guide](../SCRIPTS/01-programming-languages/python-fundamentals-3/README.md). Current totals: 23 runnable scripts, 22 utility and teaching implementations, 8 domains, 5 completed sprints. Latest tests: 71 passed, 0 failed, 1 skipped (QA-0003).
+
 ## Integrated maintenance improvements
 
 Merged from `improve/jsonl-and-sha256` into `main` by owner authorization: DATA-0001 adds `--max-line-bytes` (default 1 MiB including newline); SEC-0001 adds `--check SHA256`. See their linked guides above and [maintenance record](../TODO/IMPROVEMENTS-0001.md). Latest branch suite: 52 passed, zero failed, one existing symlink skip (53 tests). No new runnable scripts.
