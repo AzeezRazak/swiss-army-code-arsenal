@@ -60,3 +60,7 @@ On 2026-11-09 the owner requested the PHP scanner be completed properly. Sprint 
 ## DEC-0014 - Local scanner dashboard (2026-11-09)
 
 Build the owner-facing dashboard as a sibling project under `projects/python-security-research/`. It stores only a bounded scope record, reads the existing scanner SQLite outputs, and exports sanitized finding fields. Bind to loopback by default; defer authentication, live scan control and credential handling until separately authorized.
+
+## DEC-0015 - Sprint 0009 cross-folder support focus (2026-11-09)
+
+Pause further scanner and dashboard expansion. The next proposed sprint extracts five reusable, offline Python utilities into data-processing, cybersecurity, testing-quality, automation-scripting and software-architecture folders. Planning does not authorize implementation; all five scripts require a fresh `EXECUTE` decision.
