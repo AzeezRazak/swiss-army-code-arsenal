@@ -23,3 +23,7 @@ Source Sprint 0003: tests verify every grading threshold and explain whitespace/
 ## LESSON-0005 - Resource policies belong beside file examples
 
 Source Sprint 0005: the text-file lesson rejects symlinks, non-files, invalid UTF-8 and inputs over 1 MiB, with a temporary-file test for valid and missing paths. Observation/evidence: the initial full suite exposed two test defects before the corrected 71-test run passed. Action RETRO-0006: keep filesystem examples isolated in temporary directories and run focused tests before the full suite. Owner Codex; target Sprint 0006.
+
+## LESSON-0006 - Separate safety foundations from detectors
+
+Source Sprint 0006: scope, evidence, scoring, rate-budget and fixture-replay utilities were implemented without live network or exploit logic. Observation/evidence: 6 focused tests and 77 full-suite tests passed. Action RETRO-0007: every scanner detector sprint must consume these bounded foundations and retain local-fixture tests before any authorized target testing. Owner Codex; target Sprint 0007.

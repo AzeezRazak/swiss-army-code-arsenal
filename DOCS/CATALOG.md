@@ -66,6 +66,20 @@ Folder: `SCRIPTS/01-programming-languages/python-fundamentals-3/`. Python; verif
 
 Run with `python` and the linked file path from the repository root. [Guide](../SCRIPTS/01-programming-languages/python-fundamentals-3/README.md). Current totals: 23 runnable scripts, 22 utility and teaching implementations, 8 domains, 5 completed sprints. Latest tests: 71 passed, 0 failed, 1 skipped (QA-0003).
 
+## Sprint 0006 - security research foundation utilities
+
+Folders: `SCRIPTS/03-file-data-processing/`, `SCRIPTS/08-cybersecurity/`, `SCRIPTS/09-automation-scripting/`, and `SCRIPTS/20-testing-quality/`. Python; verified on Windows/Python 3.13.9 on 2026-11-09.
+
+| ID | Script | Basic description | Status |
+|---|---|---|---|
+| SEC-0002 | [validate_scope.py](../SCRIPTS/08-cybersecurity/scope-allowlist/validate_scope.py) | Exact deny-by-default scope validation | Passed |
+| SEC-0003 | [score_finding.py](../SCRIPTS/08-cybersecurity/finding-confidence/score_finding.py) | Deterministic evidence confidence scoring | Passed |
+| DATA-0003 | [validate_evidence.py](../SCRIPTS/03-file-data-processing/evidence-jsonl/validate_evidence.py) | Bounded sanitized evidence JSONL validation | Passed |
+| AUTO-0003 | [build_rate_plan.py](../SCRIPTS/09-automation-scripting/request-budget-plan/build_rate_plan.py) | Offline request-budget scheduling | Passed |
+| QA-0004 | [replay_fixture.py](../SCRIPTS/20-testing-quality/fixture-replay/replay_fixture.py) | Local deterministic observation replay | Passed |
+
+Run with `python` and the linked file path from the repository root. Current totals: 28 runnable scripts, 27 utility and teaching implementations, 12 domains, 6 completed sprints. Latest tests: 77 passed, 0 failed, 1 skipped (QA-0003). The scanner projects remain specification-only.
+
 ## Integrated maintenance improvements
 
 Merged from `improve/jsonl-and-sha256` into `main` by owner authorization: DATA-0001 adds `--max-line-bytes` (default 1 MiB including newline); SEC-0001 adds `--check SHA256`. See their linked guides above and [maintenance record](../TODO/IMPROVEMENTS-0001.md). Latest branch suite: 52 passed, zero failed, one existing symlink skip (53 tests). No new runnable scripts.

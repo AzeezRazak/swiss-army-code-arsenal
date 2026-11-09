@@ -44,3 +44,7 @@ On 2026-11-06 the owner authorized `execute next sprint`. Sprint 0004 delivered 
 ## DEC-0010 - Sprint 0005 execution
 
 On 2026-11-09 the owner authorized `execute another sprint`. Sprint 0005 continued the prepared Python fundamentals proposal with five standard-library scripts: nested records, generators, bounded text parsing, dataclasses and sibling modules. DATA-0002 and COMP-0002 remain deferred.
+
+## DEC-0011 - Three-track scanner authorization
+
+On 2026-11-09 the owner authorized all three proposed tracks: foundation utilities, a web scanner MVP and a PHP research MVP. To preserve the five-to-ten runnable-script sprint limit, Sprint 0006 executes only the five offline foundations; Sprint 0007 and Sprint 0008 are prepared as separate implementation proposals and will not auto-start.
