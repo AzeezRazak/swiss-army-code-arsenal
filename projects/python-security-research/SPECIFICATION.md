@@ -4,7 +4,7 @@ File: `projects/python-security-research/SPECIFICATION.md`
 
 Folder: `projects/python-security-research`
 
-Status: proposed specification; no scanner implementation is authorized by this document.
+Status: web scanner MVP delivered under Sprint 0007; PHP research scanner remains proposed and unimplemented.
 
 ## 1. Objectives and boundaries
 

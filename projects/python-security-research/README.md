@@ -11,7 +11,7 @@ This workspace contains two independent, custom Python security-research project
 
 The projects may reuse general-purpose components for scope enforcement, request throttling, evidence normalization, database migrations and report serialization. Detection modules, databases, reports and project-specific tests remain separate. No commercial scanner, vulnerability-scanning CLI, paid API or hosted target is a dependency.
 
-This folder currently contains specifications only. Implementation requires a separately authorized sprint. Work is limited to local laboratories, synthetic fixtures and assets/accounts/callback endpoints that the owner has explicitly permitted.
+The web scanner MVP has been delivered as a local-fixture implementation; the PHP research scanner remains specification-only. Work is limited to local laboratories, synthetic fixtures and assets/accounts/callback endpoints that the owner has explicitly permitted.
 
 ## Planned layout
 

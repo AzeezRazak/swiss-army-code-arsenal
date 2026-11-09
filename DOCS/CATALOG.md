@@ -80,6 +80,20 @@ Folders: `SCRIPTS/03-file-data-processing/`, `SCRIPTS/08-cybersecurity/`, `SCRIP
 
 Run with `python` and the linked file path from the repository root. Current totals: 28 runnable scripts, 27 utility and teaching implementations, 12 domains, 6 completed sprints. Latest tests: 77 passed, 0 failed, 1 skipped (QA-0003). The scanner projects remain specification-only.
 
+## Sprint 0007 - web vulnerability scanner MVP
+
+Folder: `projects/python-security-research/web-vulnerability-scanner/`. Python; verified on Windows/Python 3.13.9 on 2026-11-09. Fixture-only; no live target testing.
+
+| ID | Script | Basic description | Status |
+|---|---|---|---|
+| WEB-0001 | [http_observer.py](../projects/python-security-research/web-vulnerability-scanner/http_observer.py) | Bounded local observation normalization | Passed |
+| WEB-0002 | [sqli_detector.py](../projects/python-security-research/web-vulnerability-scanner/sqli_detector.py) | Controlled response-difference signals | Passed |
+| WEB-0003 | [xss_detector.py](../projects/python-security-research/web-vulnerability-scanner/xss_detector.py) | Reflection/context classification | Passed |
+| WEB-0004 | [idor_detector.py](../projects/python-security-research/web-vulnerability-scanner/idor_detector.py) | Two-account response comparison | Passed |
+| WEB-0005 | [misconfiguration_detector.py](../projects/python-security-research/web-vulnerability-scanner/misconfiguration_detector.py) | Header and cookie-policy signals | Passed |
+
+Current totals: 33 runnable scripts, 32 utility and teaching implementations, 12 domains, 7 completed sprints. Latest tests: 83 passed, 0 failed, 1 skipped (QA-0003). The PHP research scanner remains specification-only.
+
 ## Integrated maintenance improvements
 
 Merged from `improve/jsonl-and-sha256` into `main` by owner authorization: DATA-0001 adds `--max-line-bytes` (default 1 MiB including newline); SEC-0001 adds `--check SHA256`. See their linked guides above and [maintenance record](../TODO/IMPROVEMENTS-0001.md). Latest branch suite: 52 passed, zero failed, one existing symlink skip (53 tests). No new runnable scripts.

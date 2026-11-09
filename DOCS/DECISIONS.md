@@ -48,3 +48,7 @@ On 2026-11-09 the owner authorized `execute another sprint`. Sprint 0005 continu
 ## DEC-0011 - Three-track scanner authorization
 
 On 2026-11-09 the owner authorized all three proposed tracks: foundation utilities, a web scanner MVP and a PHP research MVP. To preserve the five-to-ten runnable-script sprint limit, Sprint 0006 executes only the five offline foundations; Sprint 0007 and Sprint 0008 are prepared as separate implementation proposals and will not auto-start.
+
+## DEC-0012 - Web scanner MVP execution
+
+On 2026-11-09 the owner clarified that the scanner scripts themselves were required. Sprint 0007 therefore delivered five fixture-only web scanner scripts with SQLite/JSON reports and tests. Live targets, exploit payloads, external scanner CLIs and PHP research execution remain out of scope.

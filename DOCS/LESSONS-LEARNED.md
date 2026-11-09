@@ -27,3 +27,7 @@ Source Sprint 0005: the text-file lesson rejects symlinks, non-files, invalid UT
 ## LESSON-0006 - Separate safety foundations from detectors
 
 Source Sprint 0006: scope, evidence, scoring, rate-budget and fixture-replay utilities were implemented without live network or exploit logic. Observation/evidence: 6 focused tests and 77 full-suite tests passed. Action RETRO-0007: every scanner detector sprint must consume these bounded foundations and retain local-fixture tests before any authorized target testing. Owner Codex; target Sprint 0007.
+
+## LESSON-0007 - Explicit resource cleanup is part of security tooling
+
+Source Sprint 0007: the first focused run found a SQLite connection left open, blocking Windows temporary-directory cleanup. The connection was explicitly closed and the focused/full suites then passed. Action: future detector modules must test database, file and process cleanup on the target platform before review.
