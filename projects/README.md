@@ -12,4 +12,4 @@ Each project README must explain its purpose, folder layout, languages and their
 
 Use project-local dependency environments. Do not commit credentials, installed dependencies or generated build output. Add delivered projects and their scripts to the [catalog](../DOCS/CATALOG.md). Keep project-management records in [TODO](../TODO/CURRENT.md), linking to the project files.
 
-No projects have been implemented yet. This folder is ready for future requests; creating it does not authorize a new project or sprint.
+The `python-security-research/` workspace currently contains specifications for two future projects; no scanner implementation has been authorized or delivered. Creating the workspace and specifications does not authorize a new project or sprint.
