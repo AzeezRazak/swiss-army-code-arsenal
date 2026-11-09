@@ -4,12 +4,12 @@ File: `TODO/CURRENT.md`
 
 Folder: `TODO`
 
-- Current proposed sprint: SPRINT-0009; awaiting authorization. The proposal now pauses scanner/dashboard expansion and lists five reusable offline support scripts for other Swiss folders. Sprint 0008 completed the five PHP research modules behind one scanner entry point.
+- No active sprint. Sprint 0009 is deferred by owner request and will not be executed. Sprint 0008 completed the five PHP research modules behind one scanner entry point.
 - Sprint 0003 authorized, started and completed 2026-11-05: five fundamental Python scripts delivered.
 - Owner focus: two separate Python security-research projects under `projects/python-security-research/`. CSV/interpreter tasks and scanner implementation remain deferred.
 - Active branch: main. Owner authorized merging/pushing improve/jsonl-and-sha256 into main on 2026-11-05. Repository: https://github.com/AzeezRazak/swiss-army-code-arsenal.git.
 - Verification: dashboard focused tests passed 3/3; root full suite passed 89, zero failed, one existing Windows symlink skip (QA-0003). Windows/Python 3.13.9 only.
-- Pending decisions: Sprint 0009 authorization; PHP local toolchain/sanitizer scope and primary-source verification for supplied CVE labels; license choice.
+- Pending decisions: whether to revive Sprint 0009; PHP local toolchain/sanitizer scope and primary-source verification for supplied CVE labels; license choice.
 
 ## Documents
 
@@ -35,4 +35,4 @@ Folder: `TODO`
 
 ## Authorized maintenance
 
-[Two-script improvement record](IMPROVEMENTS-0001.md): bounded JSONL lines and SHA-256 expected-digest verification. Merged into main by owner instruction. Sprint 0008 is complete; Sprint 0009 is proposed and awaits authorization. No Sprint 0009 implementation has started.
+[Two-script improvement record](IMPROVEMENTS-0001.md): bounded JSONL lines and SHA-256 expected-digest verification. Merged into main by owner instruction. Sprint 0008 is complete; Sprint 0009 is deferred. No Sprint 0009 implementation has started.

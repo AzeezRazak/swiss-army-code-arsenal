@@ -4,7 +4,7 @@ File: `TODO/SPRINT-0009/PLAN.md`
 
 Folder: `TODO/SPRINT-0009`
 
-Status: PROPOSED; planning only. This sprint is not authorized for implementation. It intentionally pauses expansion of the web scanner, PHP scanner and dashboard while extracting reusable offline utilities for other Swiss folders.
+Status: DEFERRED by owner request on 2026-11-09; planning only. This sprint is not authorized for implementation and is no longer the active sprint. It intentionally pauses expansion of the web scanner, PHP scanner and dashboard while extracting reusable offline utilities for other Swiss folders.
 
 ## Objective
 
@@ -39,4 +39,4 @@ Turn proven ideas from the [web vulnerability scanner](../../projects/python-sec
 
 Live HTTP scanning, PHP toolchain execution, authentication for the dashboard, remote hosting, external CVE verification and additional scanner detectors remain deferred. The five script ideas below the sprint budget are not authorized by this plan.
 
-NEXT SPRINT PREPARED - AWAITING HUMAN AUTHORIZATION.
+Sprint deferred. No implementation is authorized from this plan.
