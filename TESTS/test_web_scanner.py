@@ -47,6 +47,7 @@ class WebScannerTests(unittest.TestCase):
         positive = {"baseline": observation(), "tests": [observation("sqlite error: near input", 500)]}
         self.assertEqual(module.detect(positive)[0]["confidence"], "high")
         self.assertEqual(module.detect({"baseline": observation("same"), "tests": [observation("same")] }), [])
+        self.assertEqual(module.detect({"baseline": observation("same"), "tests": [observation("same", 500)]}), [])
 
     def test_xss_reflection_context(self):
         module = load("xss_detector")
@@ -123,7 +124,9 @@ class WebScannerTests(unittest.TestCase):
             config = {"allowed_hosts": ["127.0.0.1"], "targets": [{"url": f"http://127.0.0.1:{server.server_port}/search?q=ok", "parameters": ["q"]}], "delay_seconds": 0.2, "max_requests": 10}
             observer = transport.LiveObserver(config)
             fixture = transport.probe_target(observer, observer.targets[0])
-            self.assertTrue(any(item["id"].startswith("sqli-") for item in load("http_observer").scan_fixture(fixture)))
+            findings = load("http_observer").scan_fixture(fixture)
+            self.assertTrue(any(item["id"].startswith("sqli-") for item in findings))
+            self.assertFalse(any(item["id"].startswith("idor-") for item in findings))
             with self.assertRaises(ValueError):
                 transport.LiveObserver({"allowed_hosts": ["example.invalid"], "targets": config["targets"]})
         finally:
