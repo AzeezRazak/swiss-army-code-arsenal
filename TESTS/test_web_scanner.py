@@ -69,7 +69,7 @@ class WebScannerTests(unittest.TestCase):
             self.assertEqual(payload["findings"][0]["evidence"]["token"], "[REDACTED]")
 
     def test_detector_cli_writes_database_and_report(self):
-        fixture = {"marker": "MARK", "observations": [observation("MARK")]} 
+            fixture = {"marker": "MARK", "observations": [observation("MARK")]}
         with tempfile.TemporaryDirectory() as directory:
             fixture_path = Path(directory) / "xss.json"
             database = Path(directory) / "scanner.sqlite3"
